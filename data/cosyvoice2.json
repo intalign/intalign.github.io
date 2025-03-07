@@ -1,0 +1,73 @@
+{
+  "regular": [
+    {
+      "target_text": "In just a heartbeat, I can traverse oceans, cross mountains, and explore cities that I've only dreamed of. Each jump is an adventure, filled with new sights, sounds, and experiences. Imagine standing at the edge of the Grand Canyon one moment and finding myself in the bustling streets of Tokyo the next. The world is vast, and yet with each leap, it feels so close, as if all its wonders are just a heartbeat away. Isn't it exhilarating to think about the endless possibilities that await?",
+      "prompt_path": "cosyvoice2/regular/en_012.wav",
+      "prompt_text": "A single leap takes me 10 thousand miles away! Can you believe it?",
+      "base_path": "cosyvoice2/regular/cosyvoice2-expressive_regular_en-regular#en_012.wav",
+      "dpo_path": "cosyvoice2/regular/dpo_wer_27ksteps-expressive_regular_en-regular#en_012.wav"
+    }
+  ],
+  "tongueTwisters": [
+    {
+      "target_text": "Magnificent marigolds make marvelous memories in magnificent morning sunlight.",
+      "prompt_path": "cosyvoice2/tongueTwisters/en_005.wav",
+      "prompt_text": "Spark Knight Klee of the Knights of Favonius, reporting for duty! ...There's some more, but uh, I forgot. I'm not so good at remembering...",
+      "base_path": "cosyvoice2/tongueTwisters/cosyvoice2-expressive_tongueTwisters_en-tongueTwisters#en_005.wav",
+      "dpo_path": "cosyvoice2/tongueTwisters/dpo_wer_27ksteps-expressive_tongueTwisters_en-tongueTwisters#en_005.wav"
+    },
+    {
+      "target_text": "Frisky foxes found fresh food from the flowing forest while frolicking in the fields.",
+      "prompt_path": "cosyvoice2/tongueTwisters/en_006.wav",
+      "prompt_text": "How dare you!?",
+      "base_path": "cosyvoice2/tongueTwisters/cosyvoice2-expressive_tongueTwisters_en-tongueTwisters#en_006.wav",
+      "dpo_path": "cosyvoice2/tongueTwisters/dpo_wer_27ksteps-expressive_tongueTwisters_en-tongueTwisters#en_006.wav"
+    },
+    {
+      "target_text": "桥上吊刀，刀倒吊着。绳断刀掉，刀倒着吊在道上。",
+      "prompt_path": "cosyvoice2/tongueTwisters/zh_013.wav",
+      "prompt_text": "人生天地，若白驹过隙，忽然而已。",
+      "base_path": "cosyvoice2/tongueTwisters/cosyvoice2-expressive_tongueTwisters_zh-tongueTwisters#zh_013.wav",
+      "dpo_path": "cosyvoice2/tongueTwisters/dpo_wer_27ksteps-expressive_tongueTwisters_zh-tongueTwisters#zh_013.wav"
+    }
+  ],
+  "codeSwitching": [
+    {
+      "target_text": "你怎么敢！？You have crossed a line that should never be crossed， 现在我必须站稳立场。是时候面对真相，处理你行为的后果了。我们必须面对面地谈谈，在进一步误解产生之前，澄清一下。让我们不要让这个时刻在没有解决的情况下溜走。",
+      "prompt_path": "cosyvoice2/codeSwitching/en_006.wav",
+      "prompt_text": "How dare you!?",
+      "base_path": "cosyvoice2/codeSwitching/cosyvoice2-expressive_codeSwitching_en2mixed-codeSwitching#en_006.wav",
+      "dpo_path": "cosyvoice2/codeSwitching/dpo_wer_27ksteps-expressive_codeSwitching_en2mixed-codeSwitching#en_006.wav"
+    },
+    {
+      "target_text": "It's truly heartwarming,仿佛 the entire world becomes gentle in her smile. In that瞬间, time seems to freeze, and everything around失去了颜色, only her smile shines like春日的阳光, warm and bright. I can't help but wonder,是否有幸 to always be by her side,分享这份宁静与美好. Life is like a dream, I only wish this moment能长久停留.",
+      "prompt_path": "cosyvoice2/codeSwitching/zh_003.wav",
+      "prompt_text": "朕觉得甄氏莞尔一笑的样子",
+      "base_path": "cosyvoice2/codeSwitching/cosyvoice2-expressive_codeSwitching_zh2mixed-codeSwitching#zh_003.wav",
+      "dpo_path": "cosyvoice2/codeSwitching/dpo_wer_27ksteps-expressive_codeSwitching_zh2mixed-codeSwitching#zh_003.wav"
+    },
+    {
+      "target_text": "和各种 stage performances。在这段时间里，我努力提升自己的能力，希望能够通过 my music 和 dance，将正能量传递给每一个人。无论未来的 road 多么艰辛，我都会坚持追求自己的 dreams。期待在未来的 stage 上与大家见面，感谢大家的 support！",
+      "prompt_path": "cosyvoice2/codeSwitching/zh_008.wav",
+      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
+      "base_path": "cosyvoice2/codeSwitching/cosyvoice2-expressive_codeSwitching_zh2mixed-codeSwitching#zh_008.wav",
+      "dpo_path": "cosyvoice2/codeSwitching/dpo_wer_27ksteps-expressive_codeSwitching_zh2mixed-codeSwitching#zh_008.wav"
+    }
+  ],
+  "crossLingual": [
+    {
+      "target_text": "At that moment, it seemed as if I could hear the stars whispering and the moon smiling. I looked up at the sky, and endless fantasies surged in my heart, imagining crossing the clouds to explore that boundless universe. Perhaps in that distant place, there are miracles I have never seen, waiting for me to discover. Every star is a story, and every beam of starlight flickers with longing, longing for my arrival.",
+      "prompt_path": "cosyvoice2/crossLingual/zh_012.wav",
+      "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
+      "base_path": "cosyvoice2/crossLingual/cosyvoice2-expressive_crossLingual_zh2en-crossLingual#zh_012.wav",
+      "dpo_path": "cosyvoice2/crossLingual/dpo_wer_27ksteps-expressive_crossLingual_zh2en-crossLingual#zh_012.wav"
+    },
+    {
+      "target_text": "Whether it's solving difficult problems or sharing happiness, Hu Tao will do her utmost to help us spend this wonderful time together! As long as you speak up, I will come immediately to fight alongside you, making everything easier and more enjoyable.",
+      "prompt_path": "cosyvoice2/crossLingual/zh_016.wav",
+      "prompt_text": "需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。",
+      "base_path": "cosyvoice2/crossLingual/cosyvoice2-expressive_crossLingual_zh2en-crossLingual#zh_016.wav",
+      "dpo_path": "cosyvoice2/crossLingual/dpo_wer_27ksteps-expressive_crossLingual_zh2en-crossLingual#zh_016.wav"
+    }
+  ]
+}

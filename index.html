@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IntAlign</title>
+  <script src="./static/tailwind.js"></script>
+  <script src="./static/vue.global.js"></script>
+  <script src="./static/flowbite.min.js"></script>
+
+  <style type="text/tailwindcss">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      a[href^="http"] {
+        @apply text-blue-500;
+      }
+
+      a:hover {
+        @apply text-blue-700 underline;
+      }
+
+      h1 {
+        @apply mb-6 text-4xl font-bold text-gray-900 text-center;
+      }
+
+      h2 {
+        @apply mb-3 pt-4 text-2xl font-bold tracking-tight text-gray-900;
+      }
+
+      h4 {
+        @apply mb-4 pt-12 text-3xl font-semibold text-gray-900;
+      }
+
+      h5 {
+        @apply mb-3 pt-4 text-2xl font-bold tracking-tight text-gray-900;
+      }
+
+      p {
+        @apply mb-4 font-normal text-gray-900 leading-relaxed;
+      }
+    }
+
+    @layer components {
+      .list-select {
+        @apply block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0;
+      }
+
+      .tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 8px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0;
+        border-radius: 8px;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      .text-p {
+        @apply mb-4 font-normal text-gray-900 leading-relaxed;
+      }
+
+      .author {
+        @apply font-medium mr-2 pb-1 text-gray-900 inline-block text-base;
+      }
+
+      .author a {
+          @apply text-gray-900;
+        }
+
+      .affiliation {
+        @apply font-medium mr-2 pb-1 text-gray-900 block text-base;
+      }
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {}
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app">
+
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-gray-200 border-b border-gray-200"
+      style="font-weight: bold;">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto ml-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a href="#home" class="list-select"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="#dataset" class="list-select"><b>Dataset</b></a>
+            </li>
+            <li>
+              <a href="#experiments" class="list-select"><b>Experiments</b></a>
+            </li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="p-5 md:p-0 mt-16 max-w-screen-xl mx-auto" id="home">
+      <div class="p-6">
+        <div class="mt-8 mb-8">
+          <h1>Advancing Zero-shot Text-to-Speech Intelligibility across <br />
+            Diverse Domains via Preference Alignment</h1>
+        </div>
+
+        <div class="max-w-screen-xl mx-auto mt-8 mb-16">
+          <div class="text-center h-2 flex flex-col gap-3">
+          </div>
+
+          <div class="max-w-[900px] mx-auto mt-8 mb-16">
+            <h2>Abstract</h2>
+            <p class="text-p">
+              Modern zero-shot text-to-speech (TTS) systems, despite using extensive pre-training, often underperform in
+              challenging scenarios
+              such as tongue twisters, repeated words, code-switching, and cross-lingual synthesis, leading
+              to intelligibility issues. This paper proposes to
+              use preference alignment to address these challenges. Our approach leverages a newly proposed
+              <u>Int</u>elligibility <u>P</u>reference Speech Dataset
+              (INTP) and applies Direct Preference Optimization (DPO), along with our designed extensions,
+              for diverse TTS architectures. After INTP
+              alignment, in addition to intelligibility, we observe overall improvements including naturalness,
+              similarity, and audio quality for multiple
+              TTS models across diverse domains. Based on
+              that, we also verify the weak-to-strong generalization ability of INTP for more intelligible models such
+              as CosyVoice 2 and Ints.
+              Moreover, we showcase the potential for further improvements through iterative alignment
+              based on Ints. Audio samples are available at
+              <a href="https://intalign.github.io/">https://intalign.github.io/</a>.
+            </p>
+          </div>
+
+
+          <div class="mt-8 mb-8" id="dataset">
+            <h5>Dataset Examples</h5>
+            <p>
+              The following examples show the examples of the INTP dataset.
+            </p>
+          </div>
+
+          <div class="mt-8 mb-8">
+            <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
+              <h3 class="text-lg font-bold">English</h3>
+              <div
+                class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+                <ul class="flex flex-wrap -mb-px justify-center">
+                  <li v-for="(eg, index) in Object.keys(egs['en2en'])" :key="eg" class="me-2">
+                    <a href="#" @click.prevent="current_selected_egs['en'] = index" :class="[
+                         current_selected_egs['en'] === index 
+                           ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                           : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                       ]">
+                      Example #{{ index+1 }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="overflow-x-auto ">
+                <table class="w-full mt-2 mb-4 min-w-[1200px]">
+                  <thead>
+                    <tr>
+                      <th class="text-center w-1/12">Pairs Type</th>
+                      <th class="text-center w-1/12">Model</th>
+                      <th class="text-center w-1/6">Regular</th>
+                      <th class="text-center w-1/6">Repeated</th>
+                      <th class="text-center w-1/6">Code-Switching</th>
+                      <th class="text-center w-1/6">Pronunciation-Perturbed<sup>*</sup></th>
+                      <th class="text-center w-1/6">Punctuation-Perturbed<sup>*</sup></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                      <td colspan="5">
+                        <audio
+                          :src="get_audio_path(egs['en2en'][current_selected_egs['en']]['ars']['regular']['prompt_wav_path'])"
+                          controls preload="none"></audio>
+                        {{ egs['en2en'][current_selected_egs['en']]['ars']['regular']['prompt_text'] }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                      <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']]['ars'])" :key="col">
+                        {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text'] ||
+                        egs['en2en'][current_selected_egs['en']]['ars'][col]['target_text'] }}
+                      </td>
+                    </tr>
+                    <tr v-for="(model, index) in Object.keys(egs['en2en'][current_selected_egs['en']])" :key="model">
+                      <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                        Intra
+                      </td>
+                      <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                        Inter
+                      </td>
+                      <td>{{ m(model) }}</td>
+
+                      <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']][model])" :key="col">
+                        <div class="flex flex-col gap-2">
+                          <div>
+                            ✅ Chosen <audio
+                              :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['chosen'])"
+                              controls preload="none"></audio>
+                          </div>
+                          <div>
+                            ❌ Rejected <audio
+                              :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['rejected'])"
+                              controls preload="none"></audio>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-8 mb-8">
+            <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
+              <h3 class="text-lg font-bold">Chinese</h3>
+              <div
+                class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+                <ul class="flex flex-wrap -mb-px justify-center">
+                  <li v-for="(eg, index) in Object.keys(egs['zh2zh'])" :key="eg" class="me-2">
+                    <a href="#" @click.prevent="current_selected_egs['zh'] = index" :class="[
+                         current_selected_egs['zh'] === index 
+                           ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                           : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                       ]">
+                      Example #{{ index+1 }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full mt-2 mb-4 min-w-[1200px]">
+                  <thead>
+                    <tr>
+                      <th class="text-center w-1/12">Pairs Type</th>
+                      <th class="text-center w-1/12">Model</th>
+                      <th class="text-center w-1/6">Regular</th>
+                      <th class="text-center w-1/6">Repeated</th>
+                      <th class="text-center w-1/6">Code-Switching</th>
+                      <th class="text-center w-1/6">Pronunciation-Perturbed<sup>*</sup></th>
+                      <th class="text-center w-1/6">Punctuation-Perturbed<sup>*</sup></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                      <td colspan="5">
+                        <audio
+                          :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']]['ars']['regular']['prompt_wav_path'])"
+                          controls preload="none"></audio>
+                        {{ egs['zh2zh'][current_selected_egs['zh']]['ars']['regular']['prompt_text'] }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                      <td v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']]['ars'])" :key="col">
+                        {{ egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['perturbed_text'] ||
+                        egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['target_text'] }}
+                      </td>
+                    </tr>
+                    <tr v-for="(model, index) in Object.keys(egs['zh2zh'][current_selected_egs['zh']])" :key="model">
+                      <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                        Intra
+                      </td>
+                      <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                        Inter
+                      </td>
+                      <td>{{ m(model) }}</td>
+
+                      <td v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']][model])" :key="col">
+                        <div class="flex flex-col gap-2">
+                          <div>
+                            ✅ Chosen <audio
+                              :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['chosen'])"
+                              controls preload="none"></audio>
+                          </div>
+                          <div>
+                            ❌ Rejected <audio
+                              :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['rejected'])"
+                              controls preload="none"></audio>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="mt-8 mb-8">
+            <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
+              <h3 class="text-lg font-bold">Cross-Lingual</h3>
+              <div
+                class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+                <ul class="flex flex-wrap -mb-px justify-center">
+                  <li v-for="(set, index) in ['en2zh', 'zh2en']" :key="set" class="me-2">
+                    <a href="#" @click.prevent="current_selected_egs['set'] = set" :class="[
+                         current_selected_egs['set'] === set 
+                           ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                           : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                       ]">
+                      {{ set }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="w-full mt-2 mb-4 min-w-[1200px]">
+                  <thead>
+                    <tr>
+                      <th class="text-center w-1/12">Pairs Type</th>
+                      <th class="text-center w-1/12">Model</th>
+                      <th class="text-center w-1/6" v-for="i in 5" :key="i">Example #{{ i }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                      <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
+                        <audio
+                          :src="get_audio_path(egs[current_selected_egs['set']][i]['ars']['regular']['prompt_wav_path'])"
+                          controls preload="none"></audio>
+                        {{ egs[current_selected_egs['set']][i]['ars']['regular']['prompt_text'] }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                      <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
+                        {{ egs[current_selected_egs['set']][i]['ars']['regular']['target_text'] }}
+                      </td>
+                    </tr>
+                    <tr v-for="(model, index) in Object.keys(egs[current_selected_egs['set']][0])" :key="model">
+                      <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                        Intra
+                      </td>
+                      <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                        Inter
+                      </td>
+                      <td>{{ m(model) }}</td>
+
+                      <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
+                        <div class="flex flex-col gap-2">
+                          <div>
+                            ✅ Chosen
+                            <audio
+                              :src="get_audio_path(egs[current_selected_egs['set']][i][model]['regular']['chosen'])"
+                              controls preload="none"></audio>
+                          </div>
+                          <div>
+                            ❌ Rejected
+                            <audio
+                              :src="get_audio_path(egs[current_selected_egs['set']][i][model]['regular']['rejected'])"
+                              controls preload="none"></audio>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 mb-8" id="experiments">
+            <h5>Experiment Results</h5>
+            <p>
+              The following tables show the results of our experiments on different TTS models.
+            </p>
+          </div>
+
+          <div class="mt-8 mb-8">
+            <div class="mx-auto text-sm text-left rtl:text-right text-gray-900" v-for="model in models_golden_pick">
+              <h3 class="text-lg font-bold">{{ m(model) }}</h3>
+
+              <div
+                class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+                <ul class="flex flex-wrap -mb-px justify-center">
+                  <li v-for="(domain, index) in Object.keys(models_golden_pick_ars[model])" :key="domain" class="me-2">
+                    <a href="#" @click.prevent="current_selected_domain[model] = domain" :class="[
+                         current_selected_domain[model] === domain 
+                           ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                           : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                       ]">
+                      {{ m(domain) }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <table class="w-full mt-2 mb-4 min-w-[1200px]">
+                <thead>
+                  <tr>
+                    <th class="text-center w-1/6">Domain</th>
+                    <th class="text-center w-1/3">Target Text</th>
+                    <th class="text-center w-1/6">Reference</th>
+                    <th class="text-center w-1/6">
+                      {{ m(model) }}
+                    </th>
+                    <th class="text-center w-1/6">{{ m(model) }} w/INTP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Clean Data -->
+                  <template v-for="domain in Object.keys(models_golden_pick_ars[model])">
+                    <tr v-for="(item, index) in models_golden_pick_ars[model][domain]" :key="domain + index"
+                      v-if="current_selected_domain[model] === domain">
+                      <td v-if="index === 0" class="bg-gray-100 font-bold"
+                        :rowspan="models_golden_pick_ars[model][domain].length">
+                        {{ m(domain) }}
+                      </td>
+                      <td>
+                        {{ item.target_text }}
+                      </td>
+                      <td>
+                        <audio :src="item.prompt_path" controls preload="none"></audio>
+                        {{ item.prompt_text }}
+                      </td>
+                      <td>
+                        <audio :src="item.base_path" controls preload="none"></audio>
+                      </td>
+                      <td>
+                        <audio :src="item.dpo_path" controls preload="none"></audio>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const { createApp, ref } = Vue
+
+    const data_path = './data'
+
+    const get_audio_path = (url) => {
+      const encoded_url = encodeURIComponent(url)
+      return `${data_path}/${encoded_url}`
+    }
+
+    const mapping = {
+      "ars": "ARS",
+      "cosyvoice2": "CosyVoice 2",
+      "f5tts": "F5-TTS",
+      "maskgct": "MaskGCT",
+      "ars_f5tts": "ARS + F5-TTS",
+      "ars_maskgct": "ARS + MaskGCT",
+      "f5tts_maskgct": "F5-TTS + MaskGCT",
+      "ints": "Ints",
+      "regular": "Regular",
+      "tongueTwisters": "Tongue Twisters",
+      "codeSwitching": "Code-Switching",
+      "crossLingual": "Cross-Lingual"
+    }
+
+    createApp({
+      setup() {
+        // define the models to load
+        const models_golden_pick = ["ars", "cosyvoice2"]
+
+        // load the data
+        const models_golden_pick_ars = ref({})
+        models_golden_pick.forEach(async (element) => {
+          const data = await fetch(`./data/${element}.json`).then(res => res.json())
+          Object.keys(data).forEach(key => {
+            data[key].forEach(item => {
+              item.prompt_path = get_audio_path(item.prompt_path)
+              item.base_path = get_audio_path(item.base_path)
+              item.dpo_path = get_audio_path(item.dpo_path)
+              console.log(item.base_path)
+            })
+          })
+          models_golden_pick_ars.value[element] = data
+        });
+
+        // load the egs
+        const egs = ref({})
+        async function get_egs() {
+          const data = await fetch(`./data/egs.json`).then(res => res.json())
+          egs.value = data
+        }
+        get_egs()
+
+        // define the current variables
+        const current_available_egs = ref({})
+        current_available_egs.value["en"] = ["egs1", "egs2"]
+        current_available_egs.value["zh"] = ["egs1", "egs2"]
+
+        const current_selected_egs = ref({})
+        current_selected_egs.value["en"] = 0
+        current_selected_egs.value["zh"] = 0
+        current_selected_egs.value["set"] = "en2zh"
+
+        const current_selected_domain = ref({})
+        current_selected_domain.value["ars"] = "regular"
+        current_selected_domain.value["cosyvoice2"] = "regular"
+
+        // define the mapping function for normalizing the data
+        const m = (from) => {
+          return mapping[from] || from
+        }
+
+        return {
+          m,
+          models_golden_pick,
+          models_golden_pick_ars,
+          egs,
+          current_available_egs,
+          current_selected_egs,
+          current_selected_domain,
+          get_audio_path
+        }
+      }
+    }).mount('#app')
+  </script>
+
+</body>
+
+</html>

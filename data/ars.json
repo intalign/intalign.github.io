@@ -1,0 +1,115 @@
+{
+  "regular": [
+    {
+      "target_text": "I thought you might have gotten lost or caught up with something. I was beginning to wonder if we would ever meet. It's nice to finally see you and catch up. I've got so much to share about what’s been happening lately!",
+      "prompt_path": "ars/regular/en_009.wav",
+      "prompt_text": "I've been waiting for you for ages.",
+      "base_path": "ars/regular/reference_model-expressive_regular_en-regular#en_009.wav",
+      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_en-regular#en_009.wav"
+    },
+    {
+      "target_text": "In just a heartbeat, I can traverse oceans, cross mountains, and explore cities that I've only dreamed of. Each jump is an adventure, filled with new sights, sounds, and experiences. Imagine standing at the edge of the Grand Canyon one moment and finding myself in the bustling streets of Tokyo the next. The world is vast, and yet with each leap, it feels so close, as if all its wonders are just a heartbeat away. Isn't it exhilarating to think about the endless possibilities that await?",
+      "prompt_path": "ars/regular/en_012.wav",
+      "prompt_text": "A single leap takes me 10 thousand miles away! Can you believe it?",
+      "base_path": "ars/regular/reference_model-expressive_regular_en-regular#en_012.wav",
+      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_en-regular#en_012.wav"
+    },
+    {
+      "target_text": "I can’t shake this feeling of guilt, this notion that happiness is something I have to earn, not something I can simply take. Every laugh feels forced, every smile feels like a mask, hiding the turmoil within. I keep reminding myself of the struggles around me, the battles that so many face daily. How could I possibly revel in joy when there’s so much sorrow in the world? It's a constant tug-of-war between wanting to feel free and the weight of responsibility pressing down on my heart.",
+      "prompt_path": "ars/regular/en_025.wav",
+      "prompt_text": "Besides, people will see. It would look like I'm enjoying myself, which I have no right to do. Look at me.  ",
+      "base_path": "ars/regular/reference_model-expressive_regular_en-regular#en_025.wav",
+      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_en-regular#en_025.wav"
+    }
+  ],
+  "tongueTwisters": [
+    {
+      "target_text": "While we were walking, we were watching window washers wash Washington’s windows.",
+      "prompt_path": "ars/tongueTwisters/en_003.wav",
+      "prompt_text": " Some call me nature. Others call me Mother Nature. I've been here for over 4.5 billion years, 22,500 times longer than you.",
+      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_en-tongueTwisters#en_003.wav",
+      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_en-tongueTwisters#en_003.wav"
+    },
+    {
+      "target_text": "Clever cats chased curious chickens, creeping carefully through the calm cornfields.",
+      "prompt_path": "ars/tongueTwisters/en_019.wav",
+      "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.  ",
+      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_en-tongueTwisters#en_019.wav",
+      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_en-tongueTwisters#en_019.wav"
+    },
+    {
+      "target_text": "Chuck’s cheerful chickens chose crunchy corn crackers for Christmas celebration cheer.",
+      "prompt_path": "ars/tongueTwisters/en_020.wav",
+      "prompt_text": " A shack in the woods. It was dark, cold, and drafty.",
+      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_en-tongueTwisters#en_020.wav",
+      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_en-tongueTwisters#en_020.wav"
+    }
+  ],
+  "codeSwitching": [
+    {
+      "target_text": "It's truly heartwarming,仿佛 the entire world becomes gentle in her smile. In that瞬间, time seems to freeze, and everything around失去了颜色, only her smile shines like春日的阳光, warm and bright. I can't help but wonder,是否有幸 to always be by her side,分享这份宁静与美好. Life is like a dream, I only wish this moment能长久停留.",
+      "prompt_path": "ars/codeSwitching/zh_003.wav",
+      "prompt_text": "朕觉得甄氏莞尔一笑的样子",
+      "base_path": "ars/codeSwitching/reference_model-expressive_codeSwitching_zh2mixed-codeSwitching#zh_003.wav",
+      "dpo_path": "ars/codeSwitching/dpo_wer_51ksteps-expressive_codeSwitching_zh2mixed-codeSwitching#zh_003.wav"
+    },
+    {
+      "target_text": "If possible, I really hope he can考虑一下其他时间来进行那些 loud activities. After all, everyone has their own routines and生活习惯, and mutual respect is最重要的. If he can find a more suitable time,大家都能 have a more comfortable environment, have a good rest at night, and study efficiently during the day.",
+      "prompt_path": "ars/codeSwitching/zh_020.wav",
+      "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
+      "base_path": "ars/codeSwitching/reference_model-expressive_codeSwitching_zh2mixed-codeSwitching#zh_020.wav",
+      "dpo_path": "ars/codeSwitching/dpo_wer_51ksteps-expressive_codeSwitching_zh2mixed-codeSwitching#zh_020.wav"
+    }
+  ],
+  "crossLingual": [
+    {
+      "target_text": "好吧，我并不是说我不喜欢女士；只不过，有时候，一点智慧和生活经验可能更吸引人。参与不同观点和故事的对话是件令人耳目一新的事情，你永远不知道从一个经历过一切的人那里能学到什么。关键在于你所建立的连接，无论年龄或性别。",
+      "prompt_path": "ars/crossLingual/en_011.wav",
+      "prompt_text": " Now, what do you want with a geezer? Don't you like, ladies?",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_011.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_011.wav"
+    },
+    {
+      "target_text": "只需一瞬间，我就可以穿越海洋，跨越山脉，探索我梦寐以求的城市。每一次跳跃都是一次冒险，充满了新的景象、声音和体验。想象一下，一刻钟前我还站在大峡谷的边缘，下一刻却身处热闹的东京街头。世界是广阔的，但每一次跳跃，它似乎又如此接近，就好像所有的奇迹都只在一 heartbeat 之外。想到无尽的可能性在等待，是不是令人兴奋？",
+      "prompt_path": "ars/crossLingual/en_012.wav",
+      "prompt_text": "A single leap takes me 10 thousand miles away! Can you believe it?",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_012.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_012.wav"
+    },
+    {
+      "target_text": "似乎认为他们比我设定的愿景更了解的人。在这种噪音中穿行是令人沮丧的，努力保持对我们目标的关注，同时不失去促使我们走到这里的合作精神。我的每一个决定都是出于对项目的最佳利益考虑，我需要你们每一个人相信我正在引导船只驶向成功。让我们重新集中精力，将这种能量引导到富有成效的讨论中，而不是相互猜测。",
+      "prompt_path": "ars/crossLingual/en_021.wav",
+      "prompt_text": " I have reminded you all numerous times that I am directing this, and still I'm surrounded by backseat drivers",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_021.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_021.wav"
+    },
+    {
+      "target_text": "我无法摆脱这种内疚感，这种幸福是我必须争取的观念，而不是我可以简单获得的东西。每一次笑声都显得勉强，每一个微笑都像是一种伪装，掩盖着内心的动荡。我不断提醒自己周围的挣扎，还有那么多人每天面对的斗争。当世界上有如此多的悲伤时，我怎么可能尽情享受快乐呢？这是一场在渴望自由与压在心头的责任之间的持续拉锯战。",
+      "prompt_path": "ars/crossLingual/en_025.wav",
+      "prompt_text": "Besides, people will see. It would look like I'm enjoying myself, which I have no right to do. Look at me.  ",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_025.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_025.wav"
+    },
+    {
+      "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
+      "prompt_path": "ars/crossLingual/zh_001.wav",
+      "prompt_text": "你居然也能入宫？",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_001.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_001.wav"
+    },
+    {
+      "target_text": "In life, we will constantly encounter various challenges and difficulties. Sometimes, all we need to do is adjust our mindset and seek solutions. If the problems we face still cannot be resolved, then we should try different methods and strategies. Perhaps the second attempt will yield unexpected results. Being brave in facing challenges and having a clear understanding will allow us to better embrace the future.",
+      "prompt_path": "ars/crossLingual/zh_011.wav",
+      "prompt_text": "没什么是一发利箭不能解决的。如果有，那就两发。",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_011.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_011.wav"
+    },
+    {
+      "target_text": "Their voices are like a torrent, sweeping away reason and humanity. True art comes from a profound understanding and perception of life, not merely from a dazzling facade. The struggle should be to defend beliefs and freedom, not senseless destruction. We should pursue the soul of creation, explore the authenticity within, rather than let anger and impulse dominate our choices.",
+      "prompt_path": "ars/crossLingual/zh_015.wav",
+      "prompt_text": "远离那些……只凭狂想的艺术和笃信杀戮的战斗。",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_015.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_015.wav"
+    }
+  ]
+}
