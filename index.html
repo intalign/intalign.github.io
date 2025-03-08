@@ -127,7 +127,7 @@
     </nav>
 
 
-    <div class="p-4 md:p-0 mt-24 max-w-screen-xl mx-auto" id="home">
+    <div class="p-4 mt-24 max-w-screen-xl mx-auto" id="home">
       <div class="mt-16 mb-8">
         <h1>Advancing Zero-shot Text-to-Speech Intelligibility across <br />
           Diverse Domains via Preference Alignment</h1>
@@ -140,22 +140,17 @@
         <div class="max-w-[900px] mx-auto mt-8 mb-16">
           <h2>Abstract</h2>
           <p class="text-p">
-            Modern zero-shot text-to-speech (TTS) systems, despite using extensive pre-training, often underperform in
-            challenging scenarios
-            such as tongue twisters, repeated words, code-switching, and cross-lingual synthesis, leading
-            to intelligibility issues. This paper proposes to
-            use preference alignment to address these challenges. Our approach leverages a newly proposed
-            <u>Int</u>elligibility <u>P</u>reference Speech Dataset
-            (INTP) and applies Direct Preference Optimization (DPO), along with our designed extensions,
-            for diverse TTS architectures. After INTP
-            alignment, in addition to intelligibility, we observe overall improvements including naturalness,
-            similarity, and audio quality for multiple
-            TTS models across diverse domains. Based on
-            that, we also verify the weak-to-strong generalization ability of INTP for more intelligible models such
-            as CosyVoice 2 and Ints.
-            Moreover, we showcase the potential for further improvements through iterative alignment
-            based on Ints. Audio samples are available at
-            <a href="https://intalign.github.io/">https://intalign.github.io/</a>.
+            Modern zero-shot text-to-speech (TTS) systems, despite using extensive pre-training, often struggle in
+            challenging scenarios such as tongue twisters, repeated words, code-switching, and cross-lingual synthesis,
+            leading to intelligibility issues. This paper proposes to use preference alignment to address these
+            challenges. Our approach leverages a newly proposed <u>Int</u>elligibility <u>P</u>reference Speech Dataset
+            (INTP) and applies Direct Preference Optimization (DPO), along with our designed extensions, for diverse TTS
+            architectures. After INTP alignment, in addition to intelligibility, we observe overall improvements
+            including naturalness, similarity, and audio quality for multiple TTS models across diverse domains. Based
+            on that, we also verify the weak-to-strong generalization ability of INTP for more intelligible models such
+            as CosyVoice 2 and Ints. Moreover, we showcase the potential for further improvements through iterative
+            alignment based on Ints. Audio samples are available at <a
+              href="https://intalign.github.io/">https://intalign.github.io/</a>.
           </p>
         </div>
 
@@ -170,6 +165,20 @@
         <div class="mt-8 mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <h3 class="text-lg font-bold">English</h3>
+            <div
+              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+              <ul class="flex flex-wrap -mb-px justify-center">
+                <li v-for="(model, index) in Object.keys(egs['en2en'][0])" :key="model" class="me-2">
+                  <a href="#" @click.prevent="selected_model = model" :class="[
+                       selected_model === model 
+                         ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                         : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                     ]">
+                    {{ m(model) }}
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
@@ -193,8 +202,8 @@
                     <th class="text-center w-1/6">Regular</th>
                     <th class="text-center w-1/6">Repeated</th>
                     <th class="text-center w-1/6">Code-Switching</th>
-                    <th class="text-center w-1/6">Pronunciation-Perturbed<sup>*</sup></th>
-                    <th class="text-center w-1/6">Punctuation-Perturbed<sup>*</sup></th>
+                    <th class="text-center w-1/6">Pronunciation-Perturbed</th>
+                    <th class="text-center w-1/6">Punctuation-Perturbed</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -210,20 +219,26 @@
                   <tr>
                     <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
                     <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']]['ars'])" :key="col">
-                      {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text'] ||
-                      egs['en2en'][current_selected_egs['en']]['ars'][col]['target_text'] }}
+                      {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['target_text'] }}
+                      <span v-if="egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text']">
+                        <br />
+                        <span class="text-yellow-600">
+                          Perturbed Text: {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text'] }}
+                        </span>
+                      </span>
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs['en2en'][current_selected_egs['en']])" :key="model">
-                    <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
-                    <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                    <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
                     </td>
-                    <td>{{ m(model) }}</td>
+                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
 
-                    <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']][model])" :key="col">
+                    <td v-if="model === selected_model"
+                      v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']][model])" :key="col">
                       <div class="flex flex-col gap-2">
                         <div>
                           ✅ Chosen <audio
@@ -248,6 +263,20 @@
         <div class="mt-8 mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <h3 class="text-lg font-bold">Chinese</h3>
+            <div
+              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+              <ul class="flex flex-wrap -mb-px justify-center">
+                <li v-for="(model, index) in Object.keys(egs['en2en'][0])" :key="model" class="me-2">
+                  <a href="#" @click.prevent="selected_model = model" :class="[
+                       selected_model === model 
+                         ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                         : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                     ]">
+                    {{ m(model) }}
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
@@ -293,15 +322,16 @@
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs['zh2zh'][current_selected_egs['zh']])" :key="model">
-                    <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
-                    <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                    <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
                     </td>
-                    <td>{{ m(model) }}</td>
+                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
 
-                    <td v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']][model])" :key="col">
+                    <td v-if="model === selected_model"
+                      v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']][model])" :key="col">
                       <div class="flex flex-col gap-2">
                         <div>
                           ✅ Chosen <audio
@@ -327,6 +357,20 @@
         <div class="mt-8 mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <h3 class="text-lg font-bold">Cross-Lingual</h3>
+            <div
+              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
+              <ul class="flex flex-wrap -mb-px justify-center">
+                <li v-for="(model, index) in Object.keys(egs['en2en'][0])" :key="model" class="me-2">
+                  <a href="#" @click.prevent="selected_model = model" :class="[
+                       selected_model === model 
+                         ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
+                         : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+                     ]">
+                    {{ m(model) }}
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
@@ -368,15 +412,15 @@
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs[current_selected_egs['set']][0])" :key="model">
-                    <td rowspan="3" v-if="index === 0" class="bg-gray-100 font-bold">
+                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
-                    <td rowspan="3" v-if="index === 3" class="bg-gray-100 font-bold">
+                    <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
                     </td>
-                    <td>{{ m(model) }}</td>
+                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
 
-                    <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
+                    <td v-if="model === selected_model" v-for="i in [0, 1, 2, 3, 4]" :key="i">
                       <div class="flex flex-col gap-2">
                         <div>
                           ✅ Chosen
@@ -538,8 +582,10 @@
         current_selected_egs.value["set"] = "en2zh"
 
         const current_selected_domain = ref({})
-        current_selected_domain.value["ars"] = "regular"
-        current_selected_domain.value["cosyvoice2"] = "regular"
+        current_selected_domain.value["ars"] = "codeSwitching"
+        current_selected_domain.value["cosyvoice2"] = "codeSwitching"
+
+        const selected_model = ref("ars")
 
         // define the mapping function for normalizing the data
         const m = (from) => {
@@ -554,7 +600,8 @@
           current_available_egs,
           current_selected_egs,
           current_selected_domain,
-          get_audio_path
+          get_audio_path,
+          selected_model
         }
       }
     }).mount('#app')
