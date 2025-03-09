@@ -1,0 +1,127 @@
+{
+  "tongueTwisters": [
+    {
+      "target_text": "Wild wolves wandered through the wild woods, weaving between wiggling willows.",
+      "prompt_path": "maskgct/tongueTwisters/en_001.wav",
+      "prompt_text": "A chance to leave him alone, but... No. She just wanted to see him again. Anna, you don't know how it feels to lose a sister. Anna, I'm sorry, but your father asked me not to tell you anything.",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_001.wav",
+      "dpo_path": "maskgct/tongueTwisters/tongueTwisters#en_001.wav"
+    },
+    {
+      "target_text": "Shiny squirrels swiftly scampered past slippery stones near the shining, slithering stream.",
+      "prompt_path": "maskgct/tongueTwisters/en_008.wav",
+      "prompt_text": "Perhaps whoever left these behind was... also fulfilling a contract?.",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_008.wav",
+      "dpo_path": "maskgct/tongueTwisters/tongueTwisters#en_008.wav"
+    },
+    {
+      "target_text": "Chuck’s cheerful chickens chose crunchy corn crackers for Christmas celebration cheer.",
+      "prompt_path": "maskgct/tongueTwisters/en_020.wav",
+      "prompt_text": "A shack in the woods. It was dark, cold, and drafty.",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_020.wav",
+      "dpo_path": "maskgct/tongueTwisters/tongueTwisters#en_020.wav"
+    },
+    {
+      "target_text": "山羊上山山碰山羊角，水牛下水水没水牛腰。猪进猪圈猪拱大猪槽，毛驴驮草草压毛驴腰。",
+      "prompt_path": "maskgct/tongueTwisters/zh_010.wav",
+      "prompt_text": "原来张万森的那片荧光海，真的存在。我在厦门，遇见了这片蓝眼泪，它像碎钻洒进了大海，又像星星坠入了人间。",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_010.wav",
+      "dpo_path": "maskgct/tongueTwisters/tongueTwisters#zh_010.wav"
+    },
+    {
+      "target_text": "蚕吐丝 桑蚕吃桑叶，桑叶桑蚕吃。桑叶喂桑蚕，桑蚕吐蚕丝。桑蚕吐丝丝缠蚕，蚕丝缠蚕蚕吐丝。",
+      "prompt_path": "maskgct/tongueTwisters/zh_012.wav",
+      "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_012.wav",
+      "dpo_path": "maskgct/tongueTwisters/tongueTwisters#zh_012.wav"
+    }
+  ],
+  "codeSwitching": [
+    {
+      "target_text": "让它像温暖的毛毯一样包裹着你，提醒你那些共享的时刻和学到的教训。Embrace 来自那些经历的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔宝藏，一缕光亮可以照亮最黑暗的道路。让你长辈的爱在心中共鸣，给你的旅程注入力量与同情。",
+      "prompt_path": "maskgct/codeSwitching/en_014.wav",
+      "prompt_text": "The loving care of your elder has been fed into the barrel. Now, feel its warmth!",
+      "base_path": "maskgct/codeSwitching/codeSwitching#en_014.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#en_014.wav"
+    },
+    {
+      "target_text": "好吧，不是说我不喜欢女士; 只是有时候，一点智慧和生活经验会更吸引人。有时候与来自不同视角和故事的人交流是很清新的，你永远不知道从一个经历丰富的人那里你会学到什么。关键在于你所建立的联系，无论年龄或性别。",
+      "prompt_path": "maskgct/codeSwitching/en_011.wav",
+      "prompt_text": "Now, what do you want with a geezer? Don't you like, ladies?",
+      "base_path": "maskgct/codeSwitching/codeSwitching#en_011.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#en_011.wav"
+    },
+    {
+      "target_text": "你会看到附近有一棵大橡树，紧接着那边有一个小游乐场，有秋千和滑梯。这个地方非常适合放松或者让孩子们玩得开心。只需沿着小路走，你就会找到很多空间享受新鲜空气。",
+      "prompt_path": "maskgct/codeSwitching/en_022.wav",
+      "prompt_text": "Park over there, where I am pointing. Look at my finger pointing, my arms waving.",
+      "base_path": "maskgct/codeSwitching/codeSwitching#en_022.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#en_022.wav"
+    },
+    {
+      "target_text": "It's truly heartwarming,仿佛 the entire world becomes gentle in her smile. In that瞬间, time seems to freeze, and everything around失去了颜色, only her smile shines like春日的阳光, warm and bright. I can't help but wonder,是否有幸 to always be by her side,分享这份宁静与美好. Life is like a dream, I only wish this moment能长久停留.",
+      "prompt_path": "maskgct/codeSwitching/zh_003.wav",
+      "prompt_text": "朕觉得甄氏莞尔一笑的样子。",
+      "base_path": "maskgct/codeSwitching/codeSwitching#zh_003.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#zh_003.wav"
+    },
+    {
+      "target_text": "In this fleeting passage of time, 我们常常忙于追寻, yet we overlook the beauty around us. 每一刻都是独一无二的记忆, worth savoring. Cherish the present, 感恩生活, and let our souls find light in the ordinary. No matter how the future changes, may we迎接每一个新的日出 with a calm heart.",
+      "prompt_path": "maskgct/codeSwitching/zh_013.wav",
+      "prompt_text": "人生天地，若白驹过隙，忽然而已。",
+      "base_path": "maskgct/codeSwitching/codeSwitching#zh_013.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#zh_013.wav"
+    },
+    {
+      "target_text": "he always能够用 vivid 的方式将复杂的知识点化繁为简，attract every student’s attention. 不论是通过 humorous stories，还是 interactive discussions，他总能 stimulate students’ learning interest，让他们愿意主动参与进来。Not only that, he also 注重因材施教，能够依据每位学生的不同情况，提供 personalized guidance 和支持。这样的 teaching style 使得他 deep受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
+      "prompt_path": "maskgct/codeSwitching/zh_025.wav",
+      "prompt_text": "但是，那教学能力可谓是一流啊",
+      "base_path": "maskgct/codeSwitching/codeSwitching#zh_025.wav",
+      "dpo_path": "maskgct/codeSwitching/codeSwitching#zh_025.wav"
+    }
+  ],
+  "crossLingual": [
+    {
+      "target_text": "你怎么敢！？你已经越过了绝不该越过的界限，现在我必须坚守我的立场。是时候面对真相，处理你所造成的后果了。我们必须面对面地谈一谈，在进一步的误解发生之前澄清事情。我们不要让这个时刻在没有解决的情况下溜走。",
+      "prompt_path": "maskgct/crossLingual/en_006.wav",
+      "prompt_text": "How dare you!?",
+      "base_path": "maskgct/crossLingual/crossLingual#en_006.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#en_006.wav"
+    },
+    {
+      "target_text": "我以为你可能迷路了或者被什么事情耽搁了。我开始怀疑我们是否会见面。终于见到你并聊聊真是太好了。我有很多最近发生的事情想要分享！",
+      "prompt_path": "maskgct/crossLingual/en_009.wav",
+      "prompt_text": "I've been waiting for you for ages.",
+      "base_path": "maskgct/crossLingual/crossLingual#en_009.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#en_009.wav"
+    },
+    {
+      "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
+      "prompt_path": "maskgct/crossLingual/en_024.wav",
+      "prompt_text": "In which nobody, NOBODY understood what it was to be a creative being.",
+      "base_path": "maskgct/crossLingual/crossLingual#en_024.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#en_024.wav"
+    },
+    {
+      "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
+      "prompt_path": "maskgct/crossLingual/zh_001.wav",
+      "prompt_text": "你居然也能入宫？",
+      "base_path": "maskgct/crossLingual/crossLingual#zh_001.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#zh_001.wav"
+    },
+    {
+      "target_text": "But she still found it hard to let go of her feelings, which worried her friends. Gradually, some people began to reach out to her, trying to understand how she was doing and even suggesting going out together to relax. After several invitations, she finally agreed, deciding to step out of the gloom and face life again. That day, she walked out of her house, and the sunlight fell on her face, seemingly bringing a touch of long-lost warmth and hope.",
+      "prompt_path": "maskgct/crossLingual/zh_009.wav",
+      "prompt_text": "结果她自己直接晕了过去，我们走后，据说好几周都没人再见过她，看这样子，她的伤终于养好了",
+      "base_path": "maskgct/crossLingual/crossLingual#zh_009.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#zh_009.wav"
+    },
+    {
+      "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
+      "prompt_path": "maskgct/crossLingual/zh_008.wav",
+      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
+      "base_path": "maskgct/crossLingual/crossLingual#zh_008.wav",
+      "dpo_path": "maskgct/crossLingual/crossLingual#zh_008.wav"
+    }
+  ]
+}

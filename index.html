@@ -472,8 +472,8 @@
               <table class="w-full mt-2 mb-4 min-w-[1200px]">
                 <thead>
                   <tr>
-                    <th class="text-center w-1/6">Domain</th>
-                    <th class="text-center w-1/3">Target Text</th>
+                    <th class="text-center w-1/12">Domain</th>
+                    <th class="text-center w-1/6">Target Text</th>
                     <th class="text-center w-1/6">Reference</th>
                     <th class="text-center w-1/6">
                       {{ m(model) }}
@@ -537,6 +537,7 @@
       "ars_maskgct": "ARS + MaskGCT",
       "f5tts_maskgct": "F5-TTS + MaskGCT",
       "ints": "Ints",
+      "ins": "Ints",
       "regular": "Regular",
       "tongueTwisters": "Tongue Twisters",
       "codeSwitching": "Code-Switching",
@@ -546,7 +547,7 @@
     createApp({
       setup() {
         // define the models to load
-        const models_golden_pick = ["ars", "cosyvoice2"]
+        const models_golden_pick = ["ars", "cosyvoice2", "f5tts", "maskgct", "ins"]
 
         // load the data
         const models_golden_pick_ars = ref({})
@@ -584,6 +585,9 @@
         const current_selected_domain = ref({})
         current_selected_domain.value["ars"] = "codeSwitching"
         current_selected_domain.value["cosyvoice2"] = "codeSwitching"
+        current_selected_domain.value["f5tts"] = "codeSwitching"
+        current_selected_domain.value["maskgct"] = "codeSwitching"
+        current_selected_domain.value["ins"] = "codeSwitching"
 
         const selected_model = ref("ars")
 

@@ -1,0 +1,92 @@
+{
+  "tongueTwisters": [
+    {
+      "target_text": "Magnificent marigolds make marvelous memories in magnificent morning sunlight.",
+      "prompt_path": "f5tts/tongueTwisters/en_005.wav",
+      "prompt_text": "Spark Knight Klee of the Knights of Favonius, reporting for duty! ...There's some more, but uh, I forgot. I'm not so good at remembering...",
+      "base_path": "f5tts/tongueTwisters/tongueTwisters#en_005.wav",
+      "dpo_path": "f5tts/tongueTwisters/tongueTwisters#en_005.wav"
+    },
+    {
+      "target_text": "Nate a mate, meat a gate, heat a plate.",
+      "prompt_path": "f5tts/tongueTwisters/en_007.wav",
+      "prompt_text": "Go, you're free now.",
+      "base_path": "f5tts/tongueTwisters/tongueTwisters#en_007.wav",
+      "dpo_path": "f5tts/tongueTwisters/tongueTwisters#en_007.wav"
+    },
+    {
+      "target_text": "白猫满白毛房里一白猫，白猫满白毛。毛白白猫白，白猫白毛毛。",
+      "prompt_path": "f5tts/tongueTwisters/zh_006.wav",
+      "prompt_text": "对,这就是我,万人敬仰的太乙真人,虽然有点婴儿肥,但也掩不住我逼人的帅气。",
+      "base_path": "f5tts/tongueTwisters/tongueTwisters#zh_006.wav",
+      "dpo_path": "f5tts/tongueTwisters/tongueTwisters#zh_006.wav"
+    },
+    {
+      "target_text": "两只蜡，一股香，二十三日祭灶王，一碟草料，一碗水，泼在地下上天堂。面对灶王把头叩，爆竹三声响叮当，上天多多言好事， 回来给你关东糖。",
+      "prompt_path": "f5tts/tongueTwisters/zh_007.wav",
+      "prompt_text": "有这样的吗？没有吧，对不对。哇，真的吗？是不是一般都开心的状态，是比较快的，没有说慢的，对不对",
+      "base_path": "f5tts/tongueTwisters/tongueTwisters#zh_007.wav",
+      "dpo_path": "f5tts/tongueTwisters/tongueTwisters#zh_007.wav"
+    }
+  ],
+  "codeSwitching": [
+    {
+      "target_text": "我见证了无数物种的兴衰，居住的大陆的移动，以及海洋的潮起潮落。我的美丽激发艺术与诗歌，而我的愤怒能在瞬间重塑风景。我带来生命之雨，滋养土壤，还有亿万生物共同繁荣的生态系统。然而，我也提醒人类自身的脆弱，以及维持我们所有人的微妙平衡。",
+      "prompt_path": "f5tts/codeSwitching/en_003.wav",
+      "prompt_text": "Some call me nature. Others call me Mother Nature. I've been here for over 4.5 billion years, 22,500 times longer than you.",
+      "base_path": "f5tts/codeSwitching/codeSwitching#en_003.wav",
+      "dpo_path": "f5tts/codeSwitching/codeSwitching#en_003.wav"
+    },
+    {
+      "target_text": "当冷风呼啸穿过空荡荡的街道，房客收拾着他微薄的财物，心中满是绝望。镇上的人们低声议论着领主的残酷，眼中充满同情，但恐惧让他们保持沉默。他们不知道，这一恶行将点燃一场叛乱，压迫者们开始团结起来，筹划着恢复尊严，纠正那些困扰他们生活已久的错误。",
+      "prompt_path": "f5tts/codeSwitching/en_017.wav",
+      "prompt_text": "The wicked lord of the manor, who kicked his poor defenseless tenant out into the street.",
+      "base_path": "f5tts/codeSwitching/codeSwitching#en_017.wav",
+      "dpo_path": "f5tts/codeSwitching/codeSwitching#en_017.wav"
+    },
+    {
+      "target_text": "In this fleeting passage of time, 我们常常忙于追寻, yet we overlook the beauty around us. 每一刻都是独一无二的记忆, worth savoring. Cherish the present, 感恩生活, and let our souls find light in the ordinary. No matter how the future changes, may we迎接每一个新的日出 with a calm heart.",
+      "prompt_path": "f5tts/codeSwitching/zh_013.wav",
+      "prompt_text": "人生天地，若白驹过隙，忽然而已。",
+      "base_path": "f5tts/codeSwitching/codeSwitching#zh_013.wav",
+      "dpo_path": "f5tts/codeSwitching/codeSwitching#zh_013.wav"
+    },
+    {
+      "target_text": "If possible, I really hope he can考虑一下其他时间来进行那些 loud activities. After all, everyone has their own routines and生活习惯, and mutual respect is最重要的. If he can find a more suitable time,大家都能 have a more comfortable environment, have a good rest at night, and study efficiently during the day.",
+      "prompt_path": "f5tts/codeSwitching/zh_020.wav",
+      "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
+      "base_path": "f5tts/codeSwitching/codeSwitching#zh_020.wav",
+      "dpo_path": "f5tts/codeSwitching/codeSwitching#zh_020.wav"
+    }
+  ],
+  "crossLingual": [
+    {
+      "target_text": "好吧，我并不是说我不喜欢女士；只不过，有时候，一点智慧和生活经验可能更吸引人。参与不同观点和故事的对话是件令人耳目一新的事情，你永远不知道从一个经历过一切的人那里能学到什么。关键在于你所建立的连接，无论年龄或性别。",
+      "prompt_path": "f5tts/crossLingual/en_011.wav",
+      "prompt_text": "Now, what do you want with a geezer? Don't you like, ladies?",
+      "base_path": "f5tts/crossLingual/crossLingual#en_011.wav",
+      "dpo_path": "f5tts/crossLingual/crossLingual#en_011.wav"
+    },
+    {
+      "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
+      "prompt_path": "f5tts/crossLingual/en_024.wav",
+      "prompt_text": "In which nobody, NOBODY understood what it was to be a creative being.",
+      "base_path": "f5tts/crossLingual/crossLingual#en_024.wav",
+      "dpo_path": "f5tts/crossLingual/crossLingual#en_024.wav"
+    },
+    {
+      "target_text": "Yes, usually people choose to face life with more positive emotions, after all, happy times are always yearning. However, sometimes slowing down and experiencing the details of life can bring deeper joy and satisfaction. What do you think?",
+      "prompt_path": "f5tts/crossLingual/zh_007.wav",
+      "prompt_text": "有这样的吗？没有吧，对不对。哇，真的吗？是不是一般都开心的状态，是比较快的，没有说慢的，对不对",
+      "base_path": "f5tts/crossLingual/crossLingual#zh_007.wav",
+      "dpo_path": "f5tts/crossLingual/crossLingual#zh_007.wav"
+    },
+    {
+      "target_text": "If possible, I really hope he can consider other times to carry out those noisy activities. After all, everyone has their own routines and living habits, and mutual respect is the most important thing. If a more suitable time can be found, everyone will be able to have a more comfortable environment, rest well at night, and study efficiently during the day.",
+      "prompt_path": "f5tts/crossLingual/zh_020.wav",
+      "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
+      "base_path": "f5tts/crossLingual/crossLingual#zh_020.wav",
+      "dpo_path": "f5tts/crossLingual/crossLingual#zh_020.wav"
+    }
+  ]
+}

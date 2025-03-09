@@ -1,0 +1,113 @@
+{
+  "tongueTwisters": [
+    {
+      "target_text": "Double bubble gum bubbles double better with bigger double bubble gum bits.",
+      "prompt_path": "ins/tongueTwisters/en_011.wav",
+      "prompt_text": "Now, what do you want with a geezer? Don't you like, ladies",
+      "base_path": "ins/tongueTwisters/tongueTwisters#en_011.wav",
+      "dpo_path": "ins/tongueTwisters/tongueTwisters#en_011.wav"
+    },
+    {
+      "target_text": "Nate a mate, meat a gate, heat a plate.",
+      "prompt_path": "ins/tongueTwisters/en_007.wav",
+      "prompt_text": "Go, you're free now.",
+      "base_path": "ins/tongueTwisters/tongueTwisters#en_007.wav",
+      "dpo_path": "ins/tongueTwisters/tongueTwisters#en_007.wav"
+    },
+    {
+      "target_text": "八月十五月亮圆，月亮圆圆像银盘，红木桌子金闪闪，西瓜月饼共上天，海棠果，红枣鲜，当中摆个大鸭梨，红白石榴两边站，手捧甜球把月拜，拜的月亮爷爷心喜欢，银辉朗朗撒满地，保咱天下都平安。",
+      "prompt_path": "ins/tongueTwisters/zh_004.wav",
+      "prompt_text": "臣年羹尧恭谢皇上圣恩！",
+      "base_path": "ins/tongueTwisters/tongueTwisters#zh_004.wav",
+      "dpo_path": "ins/tongueTwisters/tongueTwisters#zh_004.wav"
+    },
+    {
+      "target_text": "白猫满白毛房里一白猫，白猫满白毛。毛白白猫白，白猫白毛毛。",
+      "prompt_path": "ins/tongueTwisters/zh_006.wav",
+      "prompt_text": "对,这就是我,万人敬仰的太乙真人,虽然有点婴儿肥,但也掩不住我逼人的帅气。",
+      "base_path": "ins/tongueTwisters/tongueTwisters#zh_006.wav",
+      "dpo_path": "ins/tongueTwisters/tongueTwisters#zh_006.wav"
+    },
+    {
+      "target_text": "小摇车，别摇了，小妹在车里睡着了。不送你针，不送你线，不送你火烧煮鸡蛋，送你根头绳扎小辫。",
+      "prompt_path": "ins/tongueTwisters/zh_008.wav",
+      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
+      "base_path": "ins/tongueTwisters/tongueTwisters#zh_008.wav",
+      "dpo_path": "ins/tongueTwisters/tongueTwisters#zh_008.wav"
+    }
+  ],
+  "codeSwitching": [
+    {
+      "target_text": "就像季节变化带来生机勃勃的花朵一样，关系也能随着时间的推移修复和发展。With patience and understanding, 过去的怨恨可以消退，让新的联系绽放。Reunions 就像春天，清新而充满希望，人们重新发现曾经把他们联系在一起的纽带。最终，正是对这些联系的呵护让爱与友谊再次繁荣。",
+      "prompt_path": "ins/codeSwitching/en_010.wav",
+      "prompt_text": "If flowers can bloom anew, can people once separated be reunited?",
+      "base_path": "ins/codeSwitching/codeSwitching#en_010.wav",
+      "dpo_path": "ins/codeSwitching/codeSwitching#en_010.wav"
+    },
+    {
+      "target_text": "它可能会给你一些空间来收集你的想法和情感，去反思我们经历的一切。毕竟，有时候一点距离可以提供清晰，I want you to feel comfortable.",
+      "prompt_path": "ins/codeSwitching/en_019.wav",
+      "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.",
+      "base_path": "ins/codeSwitching/codeSwitching#en_019.wav",
+      "dpo_path": "ins/codeSwitching/codeSwitching#en_019.wav"
+    },
+    {
+      "target_text": "I am willing to以忠诚之心, do my utmost, and捧心事于朝廷, serve the国家. I wish to以微薄之力, join hands with everyone, and一起开创繁荣昌盛的新局面. If there are any不妥之处, I humbly ask your majesty to明示, and I shall certainly勤修焉.",
+      "prompt_path": "ins/codeSwitching/zh_004.wav",
+      "prompt_text": "臣年羹尧恭谢皇上圣恩！",
+      "base_path": "ins/codeSwitching/codeSwitching#zh_004.wav",
+      "dpo_path": "ins/codeSwitching/codeSwitching#zh_004.wav"
+    },
+    {
+      "target_text": "I am 在千山万水之间游历, collecting 灵草妙药, teaching the way of 修仙. Although I appear 普通 on the outside, my heart is filled with 无尽的智慧与勇气. 每当 I raise my 法杖, I can feel the 灵气 of heaven and earth gathering, as if the entire 宇宙 is supporting me. My 故事 will be传颂 by future generations, becoming a legend.",
+      "prompt_path": "ins/codeSwitching/zh_006.wav",
+      "prompt_text": "对,这就是我,万人敬仰的太乙真人,虽然有点婴儿肥,但也掩不住我逼人的帅气。",
+      "base_path": "ins/codeSwitching/codeSwitching#zh_006.wav",
+      "dpo_path": "ins/codeSwitching/codeSwitching#zh_006.wav"
+    }
+  ],
+  "crossLingual": [
+    {
+      "target_text": "在那之后，技术、科学和文化等各个领域的新发展和见解不断涌现。保持最新信息非常重要，以保持我们的理解与时俱进且相关。参与最近的出版物、讨论和更新将增强我们对不断变化的话题的知识和视角。在这个信息不断发展和变化的世界中，持续学习的过程至关重要。",
+      "prompt_path": "ins/crossLingual/en_002.wav",
+      "prompt_text": "Well, a growing number of people from ethnic backgrounds are getting bored of all these white male superheroes they can't relate to, and they're hungry for characters a little closer to home or relevant to their own lives",
+      "base_path": "ins/crossLingual/crossLingual#en_002.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#en_002.wav"
+    },
+    {
+      "target_text": "让它像温暖的毯子一样包裹着你，提醒你那些共享的时刻和学到的教训。拥抱那些经历流淌而来的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔财富，是能够照亮最黑暗道路的微光。让你长辈的爱在心中回响，以力量和同情心滋养你前行的旅程。。",
+      "prompt_path": "ins/crossLingual/en_014.wav",
+      "prompt_text": "The loving care of your elder has been fed into the barrel. Now, feel its warmth!",
+      "base_path": "ins/crossLingual/crossLingual#en_014.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#en_014.wav"
+    },
+    {
+      "target_text": "然而，我相信正义总会以意想不到的方式显露出来，尽管逆境重重，我也不是轻易退缩的人。法律常常像一座迷宫，在它的曲折中，仍然可能藏有一丝希望。我召集了一支愿意探索每一个可能、挑战每一个假设、揭示他人想要掩盖的真相的法律团队。凭借坚韧和韧性，我们将继续前进，因为有时最非凡的胜利正是来源于最意想不到的情况。",
+      "prompt_path": "ins/crossLingual/en_018.wav",
+      "prompt_text": "So lovely to see you, Lady Browning, but all the barristers and all the world agree you have no chance whatsoever of winning a case against the current heir. ",
+      "base_path": "ins/crossLingual/crossLingual#en_018.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#en_018.wav"
+    },
+    {
+      "target_text": "这可能会给你空间来整理你的想法和情感，反思我们经历的一切。毕竟，有时候一点距离可以提供清晰度，我希望你感到自在。",
+      "prompt_path": "ins/crossLingual/en_019.wav",
+      "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.",
+      "base_path": "ins/crossLingual/crossLingual#en_019.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#en_019.wav"
+    },
+    {
+      "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
+      "prompt_path": "ins/crossLingual/zh_008.wav",
+      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
+      "base_path": "ins/crossLingual/crossLingual#zh_008.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#zh_008.wav"
+    },
+    {
+      "target_text": "Whether it's solving difficult problems or sharing happiness, Hu Tao will do her utmost to help us spend this wonderful time together! As long as you speak up, I will come immediately to fight alongside you, making everything easier and more enjoyable.",
+      "prompt_path": "ins/crossLingual/zh_016.wav",
+      "prompt_text": "需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。",
+      "base_path": "ins/crossLingual/crossLingual#zh_016.wav",
+      "dpo_path": "ins/crossLingual/crossLingual#zh_016.wav"
+    }
+  ]
+}
