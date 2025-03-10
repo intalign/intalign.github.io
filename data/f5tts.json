@@ -61,13 +61,6 @@
       "dpo_path": "f5tts/codeSwitching/dpo_codeSwitching#en_017.wav"
     },
     {
-      "target_text": "Actually, 我们之间的秘密更多的是一些小心思和默契的理解。For example, 在朋友面前的玩笑话，只有我们才能真正领会其中的深意. And there are those 不愿意让别人知道的过往，虽然时常提起，却总有我们共同的回忆，让我们更加亲近. In each other’s hearts, 藏着的秘密反而让我们的友谊更加坚定。",
-      "prompt_path": "f5tts/codeSwitching/zh_013.wav",
-      "prompt_text": "你俩之间有些什么不可告人的秘密？",
-      "base_path": "f5tts/codeSwitching/codeSwitching#zh_024.wav",
-      "dpo_path": "f5tts/codeSwitching/dpo_codeSwitching#zh_024.wav"
-    },
-    {
       "target_text": "If possible, I really hope he can考虑一下其他时间来进行那些 loud activities. After all, everyone has their own routines and生活习惯, and mutual respect is最重要的. If he can find a more suitable time,大家都能 have a more comfortable environment, have a good rest at night, and study efficiently during the day.",
       "prompt_path": "f5tts/codeSwitching/zh_020.wav",
       "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
@@ -76,13 +69,6 @@
     }
   ],
   "crossLingual": [
-    {
-      "target_text": "If possible, I really hope he can consider other times to carry out those noisy activities. After all, everyone has their own routines and living habits, and mutual respect is the most important thing. If a more suitable time can be found, everyone will be able to have a more comfortable environment, rest well at night, and study efficiently during the day.",
-      "prompt_path": "f5tts/crossLingual/zh_020.wav",
-      "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
-      "base_path": "f5tts/crossLingual/crossLingual#zh_020.wav",
-      "dpo_path": "f5tts/crossLingual/dpo_crossLingual#zh_020.wav"
-    },
     {
       "target_text": "Yes, usually people choose to face life with more positive emotions, after all, happy times are always yearning. However, sometimes slowing down and experiencing the details of life can bring deeper joy and satisfaction. What do you think?",
       "prompt_path": "f5tts/crossLingual/zh_007.wav",

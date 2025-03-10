@@ -38,25 +38,11 @@
       "dpo_path": "ins/tongueTwisters/dpo_tongueTwisters#en_011.wav"
     },
     {
-      "target_text": "Nate a mate, meat a gate, heat a plate.",
-      "prompt_path": "ins/tongueTwisters/en_007.wav",
-      "prompt_text": "Go, you're free now.",
-      "base_path": "ins/tongueTwisters/tongueTwisters#en_007.wav",
-      "dpo_path": "ins/tongueTwisters/dpo_tongueTwisters#en_007.wav"
-    },
-    {
       "target_text": "八月十五月亮圆，月亮圆圆像银盘，红木桌子金闪闪，西瓜月饼共上天，海棠果，红枣鲜，当中摆个大鸭梨，红白石榴两边站，手捧甜球把月拜，拜的月亮爷爷心喜欢，银辉朗朗撒满地，保咱天下都平安。",
       "prompt_path": "ins/tongueTwisters/zh_004.wav",
       "prompt_text": "臣年羹尧恭谢皇上圣恩！",
       "base_path": "ins/tongueTwisters/tongueTwisters#zh_004.wav",
       "dpo_path": "ins/tongueTwisters/dpo_tongueTwisters#zh_004.wav"
-    },
-    {
-      "target_text": "白猫满白毛房里一白猫，白猫满白毛。毛白白猫白，白猫白毛毛。",
-      "prompt_path": "ins/tongueTwisters/zh_006.wav",
-      "prompt_text": "对,这就是我,万人敬仰的太乙真人,虽然有点婴儿肥,但也掩不住我逼人的帅气。",
-      "base_path": "ins/tongueTwisters/tongueTwisters#zh_006.wav",
-      "dpo_path": "ins/tongueTwisters/dpo_tongueTwisters#zh_006.wav"
     },
     {
       "target_text": "小摇车，别摇了，小妹在车里睡着了。不送你针，不送你线，不送你火烧煮鸡蛋，送你根头绳扎小辫。",
@@ -117,13 +103,6 @@
       "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.",
       "base_path": "ins/crossLingual/crossLingual#en_019.wav",
       "dpo_path": "ins/crossLingual/dpo_crossLingual#en_019.wav"
-    },
-    {
-      "target_text": "然而，我相信正义总会以意想不到的方式显露出来，尽管逆境重重，我也不是轻易退缩的人。法律常常像一座迷宫，在它的曲折中，仍然可能藏有一丝希望。我召集了一支愿意探索每一个可能、挑战每一个假设、揭示他人想要掩盖的真相的法律团队。凭借坚韧和韧性，我们将继续前进，因为有时最非凡的胜利正是来源于最意想不到的情况。",
-      "prompt_path": "ins/crossLingual/en_018.wav",
-      "prompt_text": "So lovely to see you, Lady Browning, but all the barristers and all the world agree you have no chance whatsoever of winning a case against the current heir. ",
-      "base_path": "ins/crossLingual/crossLingual#en_018.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_018.wav"
     },
     {
       "target_text": "让它像温暖的毯子一样包裹着你，提醒你那些共享的时刻和学到的教训。拥抱那些经历流淌而来的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔财富，是能够照亮最黑暗道路的微光。让你长辈的爱在心中回响，以力量和同情心滋养你前行的旅程。。",

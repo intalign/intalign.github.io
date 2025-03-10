@@ -8,13 +8,6 @@
       "dpo_path": "maskgct/regular/dpo_regular#en_023.wav"
     },
     {
-      "target_text": "who seem to think they know better than the vision I have laid out. It’s frustrating to navigate through this noise, trying to keep the focus on our goals without losing sight of the collaborative spirit that brought us here in the first place. Every decision I make is with the best interest of the project, and I need each of you to trust that I am steering the ship toward success. Let's refocus and channel that energy into productive discussions rather than second-guessing each other.",
-      "prompt_path": "maskgct/regular/en_021.wav",
-      "prompt_text": "I have reminded you all numerous times that I am directing this, and still I'm surrounded by backseat drivers",
-      "base_path": "maskgct/regular/regular#en_021.wav",
-      "dpo_path": "maskgct/regular/dpo_regular#en_021.wav"
-    },
-    {
       "target_text": "那一瞬间，仿佛能听到星星在低语，月亮在微笑。我仰望着天空，心中涌现出无尽的幻想，想象着穿越云层，探索那无垠的宇宙。也许在那遥远的地方，有着我未曾见过的奇迹，等待着我去发现。每一颗星星都是一个故事，每一缕星光都闪烁着渴望，渴望着我的到来。",
       "prompt_path": "maskgct/regular/zh_012.wav",
       "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
@@ -31,25 +24,11 @@
   ],
   "tongueTwisters": [
     {
-      "target_text": "Frisky foxes found fresh food from the flowing forest while frolicking in the fields.",
-      "prompt_path": "maskgct/tongueTwisters/en_006.wav",
-      "prompt_text": "How dare you!?",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_006.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_006.wav"
-    },
-    {
       "target_text": "Chuck’s cheerful chickens chose crunchy corn crackers for Christmas celebration cheer.",
       "prompt_path": "maskgct/tongueTwisters/en_020.wav",
       "prompt_text": "A shack in the woods. It was dark, cold, and drafty.",
       "base_path": "maskgct/tongueTwisters/tongueTwisters#en_020.wav",
       "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_020.wav"
-    },
-    {
-      "target_text": "八月十五月亮圆，月亮圆圆像银盘，红木桌子金闪闪，西瓜月饼共上天，海棠果，红枣鲜，当中摆个大鸭梨，红白石榴两边站，手捧甜球把月拜，拜的月亮爷爷心喜欢，银辉朗朗撒满地，保咱天下都平安。",
-      "prompt_path": "maskgct/tongueTwisters/zh_004.wav",
-      "prompt_text": "臣年羹尧恭谢皇上圣恩！",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_004.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#zh_004.wav"
     },
     {
       "target_text": "挨揍渐渐成习惯，无数金星眼前转。经常被人打住院，痛彻心扉说情愿！",
@@ -60,13 +39,6 @@
     }
   ],
   "codeSwitching": [
-    {
-      "target_text": "让它像温暖的毛毯一样包裹着你，提醒你那些共享的时刻和学到的教训。Embrace 来自那些经历的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔宝藏，一缕光亮可以照亮最黑暗的道路。让你长辈的爱在心中共鸣，给你的旅程注入力量与同情。",
-      "prompt_path": "maskgct/codeSwitching/en_014.wav",
-      "prompt_text": "The loving care of your elder has been fed into the barrel. Now, feel its warmth!",
-      "base_path": "maskgct/codeSwitching/codeSwitching#en_014.wav",
-      "dpo_path": "maskgct/codeSwitching/dpo_codeSwitching#en_014.wav"
-    },
     {
       "target_text": "好吧，不是说我不喜欢女士; 只是有时候，一点智慧和生活经验会更吸引人。有时候与来自不同视角和故事的人交流是很清新的，你永远不知道从一个经历丰富的人那里你会学到什么。关键在于你所建立的联系，无论年龄或性别。",
       "prompt_path": "maskgct/codeSwitching/en_011.wav",
@@ -94,23 +66,9 @@
       "prompt_text": "人生天地，若白驹过隙，忽然而已。",
       "base_path": "maskgct/codeSwitching/codeSwitching#zh_013.wav",
       "dpo_path": "maskgct/codeSwitching/dpo_codeSwitching#zh_013.wav"
-    },
-    {
-      "target_text": "In class, he always能够用 vivid 的方式将复杂的知识点化繁为简，attract every student’s attention. 不论是通过 humorous stories，还是 interactive discussions，他总能 stimulate students’ learning interest，让他们愿意主动参与进来。Not only that, he also 注重因材施教，能够依据每位学生的不同情况，提供 personalized guidance 和支持。这样的 teaching style 使得他 deep受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
-      "prompt_path": "maskgct/codeSwitching/zh_025.wav",
-      "prompt_text": "但是，那教学能力可谓是一流啊",
-      "base_path": "maskgct/codeSwitching/codeSwitching#zh_025.wav",
-      "dpo_path": "maskgct/codeSwitching/dpo_codeSwitching#zh_025.wav"
     }
   ],
   "crossLingual": [
-    {
-      "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
-      "prompt_path": "maskgct/crossLingual/zh_008.wav",
-      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
-      "base_path": "maskgct/crossLingual/crossLingual#zh_008.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_008.wav"
-    },
     {
       "target_text": "But she still found it hard to let go of her feelings, which worried her friends. Gradually, some people began to reach out to her, trying to understand how she was doing and even suggesting going out together to relax. After several invitations, she finally agreed, deciding to step out of the gloom and face life again. That day, she walked out of her house, and the sunlight fell on her face, seemingly bringing a touch of long-lost warmth and hope.",
       "prompt_path": "maskgct/crossLingual/zh_009.wav",
@@ -119,32 +77,11 @@
       "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_009.wav"
     },
     {
-      "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
-      "prompt_path": "maskgct/crossLingual/zh_001.wav",
-      "prompt_text": "你居然也能入宫？",
-      "base_path": "maskgct/crossLingual/crossLingual#zh_001.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_001.wav"
-    },
-    {
-      "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
-      "prompt_path": "maskgct/crossLingual/en_024.wav",
-      "prompt_text": "Go, you're free now.",
-      "base_path": "maskgct/crossLingual/crossLingual#en_024.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_024.wav"
-    },
-    {
       "target_text": "我以为你可能迷路了或者被什么事情耽搁了。我开始怀疑我们是否会见面。终于见到你并聊聊真是太好了。我有很多最近发生的事情想要分享！",
       "prompt_path": "maskgct/crossLingual/en_009.wav",
       "prompt_text": "I've been waiting for you for ages.",
       "base_path": "maskgct/crossLingual/crossLingual#en_009.wav",
       "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_009.wav"
-    },
-    {
-      "target_text": "你怎么敢！？你已经越过了绝不该越过的界限，现在我必须坚守我的立场。是时候面对真相，处理你所造成的后果了。我们必须面对面地谈一谈，在进一步的误解发生之前澄清事情。我们不要让这个时刻在没有解决的情况下溜走。",
-      "prompt_path": "maskgct/crossLingual/en_006.wav",
-      "prompt_text": "How dare you!?",
-      "base_path": "maskgct/crossLingual/crossLingual#en_006.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_006.wav"
     }
   ]
 }
