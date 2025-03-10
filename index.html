@@ -235,12 +235,20 @@
 
         <div class="mt-8 mb-8">
           <h5>Monolingual Synthesis</h5>
+
+          <p class="mt-4">
+            We include two types of monolingual synthesis settings: <i><b>English</b></i> (English reference speech with
+            English
+            target text)
+            and <i><b>Chinese</b></i> (Chinese reference speech with Chinese target text).
+          </p>
+
           <h6>English</h6>
 
           <p class="mt-4">
-            Given a same English reference speech, we will demonstrate the preference pairs under different
+            Given a same English reference speech, we demonstrate the preference pairs under different
             target
-            text types.
+            text types:
           </p>
 
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
@@ -312,13 +320,13 @@
                       v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']][model])" :key="col">
                       <div class="flex flex-col gap-2">
                         <div>
-                          ✅ Chosen <audio
-                            :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['chosen'])"
+                          <img src="./img/icon_chosen.png" alt="check" class="inline-block w-5 h-5 mr-1" /> Chosen
+                          <audio :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['chosen'])"
                             controls preload="none"></audio>
                         </div>
                         <div>
-                          ❌ Rejected <audio
-                            :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['rejected'])"
+                          <img src="./img/icon_rejected.png" alt="cross" class="inline-block w-5 h-5 mr-1" /> Rejected
+                          <audio :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['rejected'])"
                             controls preload="none"></audio>
                         </div>
 
@@ -357,9 +365,9 @@
           <h6>Chinese</h6>
 
           <p class="mt-4">
-            Given a same Chinese reference speech, we will demonstrate the preference pairs under different
+            Given a same Chinese reference speech, we demonstrate the preference pairs under different
             target
-            text types.
+            text types:
           </p>
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <div
@@ -429,13 +437,13 @@
                       v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']][model])" :key="col">
                       <div class="flex flex-col gap-2">
                         <div>
-                          ✅ Chosen <audio
-                            :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['chosen'])"
+                          <img src="./img/icon_chosen.png" alt="check" class="inline-block w-5 h-5 mr-1" /> Chosen
+                          <audio :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['chosen'])"
                             controls preload="none"></audio>
                         </div>
                         <div>
-                          ❌ Rejected <audio
-                            :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['rejected'])"
+                          <img src="./img/icon_rejected.png" alt="cross" class="inline-block w-5 h-5 mr-1" /> Rejected
+                          <audio :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']][model][col]['rejected'])"
                             controls preload="none"></audio>
                         </div>
                       </div>
@@ -474,7 +482,8 @@
           <h5>Cross-Lingual Synthesis</h5>
 
           <p class="mt-4">
-            We include two types of cross-lingual settings: <i><b>en2zh</b></i> (English reference speech with Chinese
+            We include two types of cross-lingual synthesis settings: <i><b>en2zh</b></i> (English reference speech with
+            Chinese
             target text)
             and <i><b>zh2en</b></i> (Chinese reference speech with English target text):
           </p>
@@ -531,12 +540,12 @@
                     <td v-if="model === selected_model" v-for="i in [0, 1, 2, 3, 4]" :key="i">
                       <div class="flex flex-col gap-2">
                         <div>
-                          ✅ Chosen
+                          <img src="./img/icon_chosen.png" alt="check" class="inline-block w-5 h-5 mr-1" /> Chosen
                           <audio :src="get_audio_path(egs[current_selected_egs['set']][i][model]['regular']['chosen'])"
                             controls preload="none"></audio>
                         </div>
                         <div>
-                          ❌ Rejected
+                          <img src="./img/icon_rejected.png" alt="cross" class="inline-block w-5 h-5 mr-1" /> Rejected
                           <audio
                             :src="get_audio_path(egs[current_selected_egs['set']][i][model]['regular']['rejected'])"
                             controls preload="none"></audio>
@@ -550,7 +559,7 @@
 
             <div class="text-sm font-medium text-center text-gray-500">
               <ul class="flex flex-wrap justify-center mb-4">
-                <li v-for="(set, index) in ['en2zh', 'zh2en']" :key="set" class="me-2">
+                <li v-for="(set, index) in ['zh2en', 'en2zh']" :key="set" class="me-2">
                   <a href="#" @click.prevent="current_selected_egs['set'] = set" :class="[
                          'inline-flex items-center justify-center min-w-[120px] px-4 py-2.5 rounded-lg transition-all duration-200',
                          current_selected_egs['set'] === set 
@@ -718,7 +727,8 @@
         const current_selected_egs = ref({})
         current_selected_egs.value["en"] = 0
         current_selected_egs.value["zh"] = 0
-        current_selected_egs.value["set"] = "en2zh"
+        // current_selected_egs.value["set"] = "en2zh"
+        current_selected_egs.value["set"] = "zh2en"
 
         const current_selected_domain = ref({})
         current_selected_domain.value["ars"] = "codeSwitching"
@@ -727,7 +737,8 @@
         current_selected_domain.value["maskgct"] = "codeSwitching"
         current_selected_domain.value["ins"] = "codeSwitching"
 
-        const selected_model = ref("ars")
+        // const selected_model = ref("ars")
+        const selected_model = ref("ars_maskgct")
 
         // define the mapping function for normalizing the data
         const m = (from) => {
