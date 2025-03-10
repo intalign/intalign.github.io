@@ -482,10 +482,10 @@
           <h5>Cross-Lingual Synthesis</h5>
 
           <p class="mt-4">
-            We include two types of cross-lingual synthesis settings: <i><b>en2zh</b></i> (English reference speech with
+            We include two types of cross-lingual synthesis settings: <i><b>zh2en</b></i> (Chinese reference speech with
+            English target text) and <i><b>en2zh</b></i> (English reference speech with
             Chinese
-            target text)
-            and <i><b>zh2en</b></i> (Chinese reference speech with English target text):
+            target text):
           </p>
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <div
@@ -582,15 +582,22 @@
         </div>
 
         <div class="mt-8 mb-8" id="experiments">
-          <h5>Experiment Results</h5>
+          <h4>Results of INTP Alignment</h4>
           <p>
-            The following tables show the results of our experiments on different TTS models.
+            To verify the effectiveness of <a href="https://arxiv.org/abs/2305.18290">DPO</a> with INTP for
+            existing TTS models, we conduct alignment experiments with multiple models. In addition to
+            <b>ARS</b>, <b>F5-TTS</b>, and <b>MaskGCT</b>, which were used in
+            constructing the INTP dataset, we also introduce
+            two more powerful models in terms of intelligibility: <b>CosyVoice 2</b><a
+              href="https://arxiv.org/abs/2412.10117"> (Du et al., 2024)</a>, and <b>Ints</b> (Appendix D of our paper),
+            to validate INTP’s weak-to-strong
+            generalization capability.
           </p>
         </div>
 
         <div class="mt-8 mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900" v-for="model in models_golden_pick">
-            <h3 class="text-lg font-bold">{{ expt_m(model) }}</h3>
+            <h5>{{ expt_m(model) }}</h5>
 
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
@@ -615,9 +622,9 @@
                     <th class="text-center w-1/6">Target Text</th>
                     <th class="text-center w-1/6">Reference</th>
                     <th class="text-center w-1/6">
-                      {{ m(model) }}
+                      {{ expt_m(model) }}
                     </th>
-                    <th class="text-center w-1/6">{{ m(model) }} w/INTP</th>
+                    <th class="text-center w-1/6">{{ expt_m(model) }} w/ INTP</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -694,7 +701,8 @@
     createApp({
       setup() {
         // define the models to load
-        const models_golden_pick = ["ars", "cosyvoice2", "f5tts", "maskgct", "ins"]
+        // const models_golden_pick = ["ars", "cosyvoice2", "f5tts", "maskgct", "ins"]
+        const models_golden_pick = ["ars", "f5tts", "maskgct", "cosyvoice2", "ins"]
 
         // load the data
         const models_golden_pick_ars = ref({})
@@ -731,11 +739,11 @@
         current_selected_egs.value["set"] = "zh2en"
 
         const current_selected_domain = ref({})
-        current_selected_domain.value["ars"] = "codeSwitching"
-        current_selected_domain.value["cosyvoice2"] = "codeSwitching"
-        current_selected_domain.value["f5tts"] = "codeSwitching"
-        current_selected_domain.value["maskgct"] = "codeSwitching"
-        current_selected_domain.value["ins"] = "codeSwitching"
+        current_selected_domain.value["ars"] = "crossLingual"
+        current_selected_domain.value["cosyvoice2"] = "crossLingual"
+        current_selected_domain.value["f5tts"] = "crossLingual"
+        current_selected_domain.value["maskgct"] = "crossLingual"
+        current_selected_domain.value["ins"] = "crossLingual"
 
         // const selected_model = ref("ars")
         const selected_model = ref("ars_maskgct")
