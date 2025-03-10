@@ -8,25 +8,11 @@
       "dpo_path": "cosyvoice2/regular/dpo_wer_27ksteps-expressive_regular_en-regular#en_012.wav"
     },
     {
-      "target_text": "After that point, new developments and insights in various fields, such as technology, science, and culture, continue to emerge. It is essential to stay updated with the latest information to keep our understanding current and relevant. Engaging with recent publications, discussions, and updates will enhance our knowledge and perspective on evolving topics. This ongoing learning process is crucial in an ever-changing world where information is constantly advancing and shifting.",
-      "prompt_path": "cosyvoice2/regular/en_002.wav",
-      "prompt_text": "Well, a growing number of people from ethnic backgrounds are getting bored of all these white male superheroes they can't relate to, and they're hungry for characters a little closer to home or relevant to their own lives",
-      "base_path": "cosyvoice2/regular/cosyvoice2-expressive_regular_en-regular#en_002.wav",
-      "dpo_path": "cosyvoice2/regular/dpo_wer_27ksteps-expressive_regular_en-regular#en_002.wav"
-    },
-    {
       "target_text": "我希望通过你的故事，了解更多原本只在书本上见过的经历。每一个新的视角都是一扇通往未知的大门，打开后，或许会看到不一样的风景。你愿意和我分享你的冒险吗？我相信，彼此的交流会让我们都变得更加丰富多彩。",
       "prompt_path": "cosyvoice2/regular/zh_019.wav",
       "prompt_text": "初次见面，我已经关注你很久了。我叫纳西妲，别看我像个孩子，我比任何一位大人都了解这个世界。所以，我可以用我的知识，换取你路上的见闻吗？",
       "base_path": "cosyvoice2/regular/cosyvoice2-expressive_regular_zh-regular#zh_019.wav",
       "dpo_path": "cosyvoice2/regular/dpo_wer_27ksteps-expressive_regular_zh-regular#zh_019.wav"
-    },
-    {
-      "target_text": "如果可以的话，我真希望他能考虑一下其他时间来进行那些噪音较大的活动。毕竟，大家都有自己的作息和生活习惯，彼此之间的尊重是最重要的。要是能找到一个更合适的时间，大家都能有个更舒适的环境，晚上能好好休息，白天也能高效学习。",
-      "prompt_path": "cosyvoice2/regular/zh_020.wav",
-      "prompt_text": "希望室友不要半夜敲敲打打做模型…或者他不在家最好。我不想晚上睡觉还得戴着耳机。",
-      "base_path": "cosyvoice2/regular/cosyvoice2-expressive_regular_zh-regular#zh_020.wav",
-      "dpo_path": "cosyvoice2/regular/dpo_wer_27ksteps-expressive_regular_zh-regular#zh_020.wav"
     }
   ],
   "tongueTwisters": [
