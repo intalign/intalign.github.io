@@ -68,32 +68,11 @@
   ],
   "crossLingual": [
     {
-      "target_text": "在那之后，技术、科学和文化等各个领域的新发展和见解不断涌现。保持最新信息非常重要，以保持我们的理解与时俱进且相关。参与最近的出版物、讨论和更新将增强我们对不断变化的话题的知识和视角。在这个信息不断发展和变化的世界中，持续学习的过程至关重要。",
-      "prompt_path": "ins/crossLingual/en_002.wav",
-      "prompt_text": "Well, a growing number of people from ethnic backgrounds are getting bored of all these white male superheroes they can't relate to, and they're hungry for characters a little closer to home or relevant to their own lives",
-      "base_path": "ins/crossLingual/crossLingual#en_002.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_002.wav"
-    },
-    {
-      "target_text": "让它像温暖的毯子一样包裹着你，提醒你那些共享的时刻和学到的教训。拥抱那些经历流淌而来的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔财富，是能够照亮最黑暗道路的微光。让你长辈的爱在心中回响，以力量和同情心滋养你前行的旅程。。",
-      "prompt_path": "ins/crossLingual/en_014.wav",
-      "prompt_text": "The loving care of your elder has been fed into the barrel. Now, feel its warmth!",
-      "base_path": "ins/crossLingual/crossLingual#en_014.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_014.wav"
-    },
-    {
-      "target_text": "然而，我相信正义总会以意想不到的方式显露出来，尽管逆境重重，我也不是轻易退缩的人。法律常常像一座迷宫，在它的曲折中，仍然可能藏有一丝希望。我召集了一支愿意探索每一个可能、挑战每一个假设、揭示他人想要掩盖的真相的法律团队。凭借坚韧和韧性，我们将继续前进，因为有时最非凡的胜利正是来源于最意想不到的情况。",
-      "prompt_path": "ins/crossLingual/en_018.wav",
-      "prompt_text": "So lovely to see you, Lady Browning, but all the barristers and all the world agree you have no chance whatsoever of winning a case against the current heir. ",
-      "base_path": "ins/crossLingual/crossLingual#en_018.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_018.wav"
-    },
-    {
-      "target_text": "这可能会给你空间来整理你的想法和情感，反思我们经历的一切。毕竟，有时候一点距离可以提供清晰度，我希望你感到自在。",
-      "prompt_path": "ins/crossLingual/en_019.wav",
-      "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.",
-      "base_path": "ins/crossLingual/crossLingual#en_019.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_019.wav"
+      "target_text": "Whether it's solving difficult problems or sharing happiness, Hu Tao will do her utmost to help us spend this wonderful time together! As long as you speak up, I will come immediately to fight alongside you, making everything easier and more enjoyable.",
+      "prompt_path": "ins/crossLingual/zh_016.wav",
+      "prompt_text": "需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。",
+      "base_path": "ins/crossLingual/crossLingual#zh_016.wav",
+      "dpo_path": "ins/crossLingual/dpo_crossLingual#zh_016.wav"
     },
     {
       "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
@@ -103,11 +82,32 @@
       "dpo_path": "ins/crossLingual/dpo_crossLingual#zh_008.wav"
     },
     {
-      "target_text": "Whether it's solving difficult problems or sharing happiness, Hu Tao will do her utmost to help us spend this wonderful time together! As long as you speak up, I will come immediately to fight alongside you, making everything easier and more enjoyable.",
-      "prompt_path": "ins/crossLingual/zh_016.wav",
-      "prompt_text": "需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。",
-      "base_path": "ins/crossLingual/crossLingual#zh_016.wav",
-      "dpo_path": "ins/crossLingual/dpo_crossLingual#zh_016.wav"
+      "target_text": "这可能会给你空间来整理你的想法和情感，反思我们经历的一切。毕竟，有时候一点距离可以提供清晰度，我希望你感到自在。",
+      "prompt_path": "ins/crossLingual/en_019.wav",
+      "prompt_text": "If you find it difficult to have someone sleeping beside you after all this time, I can creep off into the spare room.",
+      "base_path": "ins/crossLingual/crossLingual#en_019.wav",
+      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_019.wav"
+    },
+    {
+      "target_text": "然而，我相信正义总会以意想不到的方式显露出来，尽管逆境重重，我也不是轻易退缩的人。法律常常像一座迷宫，在它的曲折中，仍然可能藏有一丝希望。我召集了一支愿意探索每一个可能、挑战每一个假设、揭示他人想要掩盖的真相的法律团队。凭借坚韧和韧性，我们将继续前进，因为有时最非凡的胜利正是来源于最意想不到的情况。",
+      "prompt_path": "ins/crossLingual/en_018.wav",
+      "prompt_text": "So lovely to see you, Lady Browning, but all the barristers and all the world agree you have no chance whatsoever of winning a case against the current heir. ",
+      "base_path": "ins/crossLingual/crossLingual#en_018.wav",
+      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_018.wav"
+    },
+    {
+      "target_text": "让它像温暖的毯子一样包裹着你，提醒你那些共享的时刻和学到的教训。拥抱那些经历流淌而来的智慧，让它在挑战中引导你，并激励你的梦想。每一个记忆都是一笔财富，是能够照亮最黑暗道路的微光。让你长辈的爱在心中回响，以力量和同情心滋养你前行的旅程。。",
+      "prompt_path": "ins/crossLingual/en_014.wav",
+      "prompt_text": "The loving care of your elder has been fed into the barrel. Now, feel its warmth!",
+      "base_path": "ins/crossLingual/crossLingual#en_014.wav",
+      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_014.wav"
+    },
+    {
+      "target_text": "在那之后，技术、科学和文化等各个领域的新发展和见解不断涌现。保持最新信息非常重要，以保持我们的理解与时俱进且相关。参与最近的出版物、讨论和更新将增强我们对不断变化的话题的知识和视角。在这个信息不断发展和变化的世界中，持续学习的过程至关重要。",
+      "prompt_path": "ins/crossLingual/en_002.wav",
+      "prompt_text": "Well, a growing number of people from ethnic backgrounds are getting bored of all these white male superheroes they can't relate to, and they're hungry for characters a little closer to home or relevant to their own lives",
+      "base_path": "ins/crossLingual/crossLingual#en_002.wav",
+      "dpo_path": "ins/crossLingual/dpo_crossLingual#en_002.wav"
     }
   ]
 }

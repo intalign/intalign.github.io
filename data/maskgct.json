@@ -82,32 +82,11 @@
   ],
   "crossLingual": [
     {
-      "target_text": "你怎么敢！？你已经越过了绝不该越过的界限，现在我必须坚守我的立场。是时候面对真相，处理你所造成的后果了。我们必须面对面地谈一谈，在进一步的误解发生之前澄清事情。我们不要让这个时刻在没有解决的情况下溜走。",
-      "prompt_path": "maskgct/crossLingual/en_006.wav",
-      "prompt_text": "How dare you!?",
-      "base_path": "maskgct/crossLingual/crossLingual#en_006.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_006.wav"
-    },
-    {
-      "target_text": "我以为你可能迷路了或者被什么事情耽搁了。我开始怀疑我们是否会见面。终于见到你并聊聊真是太好了。我有很多最近发生的事情想要分享！",
-      "prompt_path": "maskgct/crossLingual/en_009.wav",
-      "prompt_text": "I've been waiting for you for ages.",
-      "base_path": "maskgct/crossLingual/crossLingual#en_009.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_009.wav"
-    },
-    {
-      "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
-      "prompt_path": "maskgct/crossLingual/en_024.wav",
-      "prompt_text": "In which nobody, NOBODY understood what it was to be a creative being.",
-      "base_path": "maskgct/crossLingual/crossLingual#en_024.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_024.wav"
-    },
-    {
-      "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
-      "prompt_path": "maskgct/crossLingual/zh_001.wav",
-      "prompt_text": "你居然也能入宫？",
-      "base_path": "maskgct/crossLingual/crossLingual#zh_001.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_001.wav"
+      "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
+      "prompt_path": "maskgct/crossLingual/zh_008.wav",
+      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
+      "base_path": "maskgct/crossLingual/crossLingual#zh_008.wav",
+      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_008.wav"
     },
     {
       "target_text": "But she still found it hard to let go of her feelings, which worried her friends. Gradually, some people began to reach out to her, trying to understand how she was doing and even suggesting going out together to relax. After several invitations, she finally agreed, deciding to step out of the gloom and face life again. That day, she walked out of her house, and the sunlight fell on her face, seemingly bringing a touch of long-lost warmth and hope.",
@@ -117,11 +96,32 @@
       "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_009.wav"
     },
     {
-      "target_text": "And various stage performances. During this time, I strive to improve my abilities, hoping to convey positive energy to everyone through my music and dance. No matter how difficult the road ahead may be, I will persist in pursuing my dreams. I look forward to meeting everyone on the stage in the future, thank you all for your support!",
-      "prompt_path": "maskgct/crossLingual/zh_008.wav",
-      "prompt_text": "全民制作人们大家好，我是练习时长两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球、music",
-      "base_path": "maskgct/crossLingual/crossLingual#zh_008.wav",
-      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_008.wav"
+      "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
+      "prompt_path": "maskgct/crossLingual/zh_001.wav",
+      "prompt_text": "你居然也能入宫？",
+      "base_path": "maskgct/crossLingual/crossLingual#zh_001.wav",
+      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#zh_001.wav"
+    },
+    {
+      "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
+      "prompt_path": "maskgct/crossLingual/en_024.wav",
+      "prompt_text": "In which nobody, NOBODY understood what it was to be a creative being.",
+      "base_path": "maskgct/crossLingual/crossLingual#en_024.wav",
+      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_024.wav"
+    },
+    {
+      "target_text": "我以为你可能迷路了或者被什么事情耽搁了。我开始怀疑我们是否会见面。终于见到你并聊聊真是太好了。我有很多最近发生的事情想要分享！",
+      "prompt_path": "maskgct/crossLingual/en_009.wav",
+      "prompt_text": "I've been waiting for you for ages.",
+      "base_path": "maskgct/crossLingual/crossLingual#en_009.wav",
+      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_009.wav"
+    },
+    {
+      "target_text": "你怎么敢！？你已经越过了绝不该越过的界限，现在我必须坚守我的立场。是时候面对真相，处理你所造成的后果了。我们必须面对面地谈一谈，在进一步的误解发生之前澄清事情。我们不要让这个时刻在没有解决的情况下溜走。",
+      "prompt_path": "maskgct/crossLingual/en_006.wav",
+      "prompt_text": "How dare you!?",
+      "base_path": "maskgct/crossLingual/crossLingual#en_006.wav",
+      "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_006.wav"
     }
   ]
 }

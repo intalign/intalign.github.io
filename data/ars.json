@@ -15,11 +15,18 @@
       "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_en-regular#en_012.wav"
     },
     {
-      "target_text": "I can’t shake this feeling of guilt, this notion that happiness is something I have to earn, not something I can simply take. Every laugh feels forced, every smile feels like a mask, hiding the turmoil within. I keep reminding myself of the struggles around me, the battles that so many face daily. How could I possibly revel in joy when there’s so much sorrow in the world? It's a constant tug-of-war between wanting to feel free and the weight of responsibility pressing down on my heart.",
-      "prompt_path": "ars/regular/en_025.wav",
-      "prompt_text": "Besides, people will see. It would look like I'm enjoying myself, which I have no right to do. Look at me.  ",
-      "base_path": "ars/regular/reference_model-expressive_regular_en-regular#en_025.wav",
-      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_en-regular#en_025.wav"
+      "target_text": "当我走近那片海水，波浪轻轻拍打着岸边，仿佛在诉说着无数个夜晚的秘密。微微的潮湿气息中夹杂着咸咸的海味，心中不禁被这奇特景象所吸引，仿佛置身于梦幻的画卷之中。每一个倒映的光点，都在引导我靠近这份神秘的美丽，让人心驰神往。此时此刻，生活的烦恼似乎都被抛在了脑后，只剩下这无与伦比的宁静与奇幻。",
+      "prompt_path": "ars/regular/zh_010.wav",
+      "prompt_text": "原来张万森的那片荧光海，真的存在。我在厦门，遇见了这片蓝眼泪，它像碎钻洒进了大海，又像星星坠入了人间。",
+      "base_path": "ars/regular/reference_model-expressive_regular_zh-regular#zh_010.wav",
+      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_zh-regular#zh_010.wav"
+    },
+    {
+      "target_text": "无论是解答难题还是分享快乐，胡桃都会竭尽所能，让我们一起度过这个美好的时光吧！只要你开口，我就会立刻赶来，与你并肩作战，让一切变得更加轻松和愉快。",
+      "prompt_path": "ars/regular/zh_016.wav",
+      "prompt_text": "需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。",
+      "base_path": "ars/regular/reference_model-expressive_regular_zh-regular#zh_016.wav",
+      "dpo_path": "ars/regular/dpo_wer_51ksteps-expressive_regular_zh-regular#zh_016.wav"
     }
   ],
   "tongueTwisters": [
@@ -38,14 +45,35 @@
       "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_en-tongueTwisters#en_019.wav"
     },
     {
-      "target_text": "Chuck’s cheerful chickens chose crunchy corn crackers for Christmas celebration cheer.",
-      "prompt_path": "ars/tongueTwisters/en_020.wav",
-      "prompt_text": " A shack in the woods. It was dark, cold, and drafty.",
-      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_en-tongueTwisters#en_020.wav",
-      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_en-tongueTwisters#en_020.wav"
+      "target_text": "苏苏好学好看书，进屋去取书橱书。书橱跳出小老鼠，老鼠书橱啃图书。苏苏丢书忙打鼠，逮住老鼠再取书。",
+      "prompt_path": "ars/tongueTwisters/zh_011.wav",
+      "prompt_text": "没什么是一发利箭不能解决的。如果有，那就两发。",
+      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_zh-tongueTwisters#zh_011.wav",
+      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_zh-tongueTwisters#zh_011.wav"
+    },
+    {
+      "target_text": "风筝风筝真好玩儿，春风一刮飘起来。大沙燕儿，小屁连儿，还有悟空戏蜈蚣。黑锅底，真爱起，一个跟头折到底。",
+      "prompt_path": "ars/tongueTwisters/zh_017.wav",
+      "prompt_text": "力量在不断地涌出…想必下次作战，我们可以配合得更好。",
+      "base_path": "ars/tongueTwisters/reference_model-expressive_tongueTwisters_zh-tongueTwisters#zh_017.wav",
+      "dpo_path": "ars/tongueTwisters/dpo_wer_51ksteps-expressive_tongueTwisters_zh-tongueTwisters#zh_017.wav"
     }
   ],
   "codeSwitching": [
+    {
+      "target_text": "这个转变正在激发对多样化故事叙述的需求，让更广泛的观众产生共鸣。Creators们现在正在探索丰富的叙事，反映不同的文化、背景和经历，介绍那些与这些社区共同分享斗争与胜利的英雄。因此，我们正在目睹漫画和电影领域一个令人兴奋的演变，在这里每个人都可以看到自己在英雄旅程中的存在。这是对个体性的庆祝，也是对所有声音加入叙事的邀请。",
+      "prompt_path": "ars/codeSwitching/en_004.wav",
+      "prompt_text": "And the aggregate amount of debt sued for was 81,791 pounds.",
+      "base_path": "ars/codeSwitching/reference_model-expressive_codeSwitching_en2mixed-codeSwitching#en_004.wav",
+      "dpo_path": "ars/codeSwitching/dpo_wer_51ksteps-expressive_codeSwitching_en2mixed-codeSwitching#en_004.wav"
+    },
+    {
+      "target_text": "拥抱未来的可能性，explore这个世界，用开放的心态，让你的梦想引导你踏上这段新旅程。每一步你走都让你更接近那些等待展开的冒险，所以深吸一口气，自信地跳入未知。",
+      "prompt_path": "ars/codeSwitching/en_007.wav",
+      "prompt_text": "Go, you're free now.",
+      "base_path": "ars/codeSwitching/reference_model-expressive_codeSwitching_en2mixed-codeSwitching#en_007.wav",
+      "dpo_path": "ars/codeSwitching/dpo_wer_51ksteps-expressive_codeSwitching_en2mixed-codeSwitching#en_007.wav"
+    },
     {
       "target_text": "It's truly heartwarming,仿佛 the entire world becomes gentle in her smile. In that瞬间, time seems to freeze, and everything around失去了颜色, only her smile shines like春日的阳光, warm and bright. I can't help but wonder,是否有幸 to always be by her side,分享这份宁静与美好. Life is like a dream, I only wish this moment能长久停留.",
       "prompt_path": "ars/codeSwitching/zh_003.wav",
@@ -63,32 +91,11 @@
   ],
   "crossLingual": [
     {
-      "target_text": "好吧，我并不是说我不喜欢女士；只不过，有时候，一点智慧和生活经验可能更吸引人。参与不同观点和故事的对话是件令人耳目一新的事情，你永远不知道从一个经历过一切的人那里能学到什么。关键在于你所建立的连接，无论年龄或性别。",
-      "prompt_path": "ars/crossLingual/en_011.wav",
-      "prompt_text": " Now, what do you want with a geezer? Don't you like, ladies?",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_011.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_011.wav"
-    },
-    {
-      "target_text": "只需一瞬间，我就可以穿越海洋，跨越山脉，探索我梦寐以求的城市。每一次跳跃都是一次冒险，充满了新的景象、声音和体验。想象一下，一刻钟前我还站在大峡谷的边缘，下一刻却身处热闹的东京街头。世界是广阔的，但每一次跳跃，它似乎又如此接近，就好像所有的奇迹都只在一 heartbeat 之外。想到无尽的可能性在等待，是不是令人兴奋？",
-      "prompt_path": "ars/crossLingual/en_012.wav",
-      "prompt_text": "A single leap takes me 10 thousand miles away! Can you believe it?",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_012.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_012.wav"
-    },
-    {
-      "target_text": "似乎认为他们比我设定的愿景更了解的人。在这种噪音中穿行是令人沮丧的，努力保持对我们目标的关注，同时不失去促使我们走到这里的合作精神。我的每一个决定都是出于对项目的最佳利益考虑，我需要你们每一个人相信我正在引导船只驶向成功。让我们重新集中精力，将这种能量引导到富有成效的讨论中，而不是相互猜测。",
-      "prompt_path": "ars/crossLingual/en_021.wav",
-      "prompt_text": " I have reminded you all numerous times that I am directing this, and still I'm surrounded by backseat drivers",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_021.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_021.wav"
-    },
-    {
-      "target_text": "我无法摆脱这种内疚感，这种幸福是我必须争取的观念，而不是我可以简单获得的东西。每一次笑声都显得勉强，每一个微笑都像是一种伪装，掩盖着内心的动荡。我不断提醒自己周围的挣扎，还有那么多人每天面对的斗争。当世界上有如此多的悲伤时，我怎么可能尽情享受快乐呢？这是一场在渴望自由与压在心头的责任之间的持续拉锯战。",
-      "prompt_path": "ars/crossLingual/en_025.wav",
-      "prompt_text": "Besides, people will see. It would look like I'm enjoying myself, which I have no right to do. Look at me.  ",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_025.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_025.wav"
+      "target_text": "Their voices are like a torrent, sweeping away reason and humanity. True art comes from a profound understanding and perception of life, not merely from a dazzling facade. The struggle should be to defend beliefs and freedom, not senseless destruction. We should pursue the soul of creation, explore the authenticity within, rather than let anger and impulse dominate our choices.",
+      "prompt_path": "ars/crossLingual/zh_015.wav",
+      "prompt_text": "远离那些……只凭狂想的艺术和笃信杀戮的战斗。",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_015.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_015.wav"
     },
     {
       "target_text": "I never expected this. Life in the palace is completely different from the outside world, entangled with power and wisdom, facing challenges that arise endlessly. I must remain vigilant at all times, adapt to this unpredictable environment, form alliances, and also be careful of enemies hidden in the shadows. In the game of power, no one can foresee what will happen tomorrow.",
@@ -98,18 +105,18 @@
       "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_001.wav"
     },
     {
-      "target_text": "In life, we will constantly encounter various challenges and difficulties. Sometimes, all we need to do is adjust our mindset and seek solutions. If the problems we face still cannot be resolved, then we should try different methods and strategies. Perhaps the second attempt will yield unexpected results. Being brave in facing challenges and having a clear understanding will allow us to better embrace the future.",
-      "prompt_path": "ars/crossLingual/zh_011.wav",
-      "prompt_text": "没什么是一发利箭不能解决的。如果有，那就两发。",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_011.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_011.wav"
+      "target_text": "只需一瞬间，我就可以穿越海洋，跨越山脉，探索我梦寐以求的城市。每一次跳跃都是一次冒险，充满了新的景象、声音和体验。想象一下，一刻钟前我还站在大峡谷的边缘，下一刻却身处热闹的东京街头。世界是广阔的，但每一次跳跃，它似乎又如此接近，就好像所有的奇迹都只在一 heartbeat 之外。想到无尽的可能性在等待，是不是令人兴奋？",
+      "prompt_path": "ars/crossLingual/en_012.wav",
+      "prompt_text": "A single leap takes me 10 thousand miles away! Can you believe it?",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_012.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_012.wav"
     },
     {
-      "target_text": "Their voices are like a torrent, sweeping away reason and humanity. True art comes from a profound understanding and perception of life, not merely from a dazzling facade. The struggle should be to defend beliefs and freedom, not senseless destruction. We should pursue the soul of creation, explore the authenticity within, rather than let anger and impulse dominate our choices.",
-      "prompt_path": "ars/crossLingual/zh_015.wav",
-      "prompt_text": "远离那些……只凭狂想的艺术和笃信杀戮的战斗。",
-      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_zh2en-crossLingual#zh_015.wav",
-      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_zh2en-crossLingual#zh_015.wav"
+      "target_text": "好吧，我并不是说我不喜欢女士；只不过，有时候，一点智慧和生活经验可能更吸引人。参与不同观点和故事的对话是件令人耳目一新的事情，你永远不知道从一个经历过一切的人那里能学到什么。关键在于你所建立的连接，无论年龄或性别。",
+      "prompt_path": "ars/crossLingual/en_011.wav",
+      "prompt_text": " Now, what do you want with a geezer? Don't you like, ladies?",
+      "base_path": "ars/crossLingual/reference_model-expressive_crossLingual_en2zh-crossLingual#en_011.wav",
+      "dpo_path": "ars/crossLingual/dpo_wer_51ksteps-expressive_crossLingual_en2zh-crossLingual#en_011.wav"
     }
   ]
 }
