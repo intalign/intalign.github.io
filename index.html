@@ -40,6 +40,10 @@
         @apply mb-3 pt-4 text-2xl font-bold tracking-tight text-gray-900;
       }
 
+      h6 {
+        @apply mb-3 pt-4 text-xl font-bold tracking-tight text-gray-900;
+      }
+
       p {
         @apply mb-4 font-normal text-gray-900 leading-relaxed;
       }
@@ -114,10 +118,10 @@
               <a href="#home" class="list-select"><b>Home</b></a>
             </li>
             <li>
-              <a href="#dataset" class="list-select"><b>Dataset</b></a>
+              <a href="#dataset" class="list-select"><b>INTP Dataset</b></a>
             </li>
             <li>
-              <a href="#experiments" class="list-select"><b>Experiments</b></a>
+              <a href="#experiments" class="list-select"><b>INTP Alignment</b></a>
             </li>
 
 
@@ -149,46 +153,107 @@
             including naturalness, similarity, and audio quality for multiple TTS models across diverse domains. Based
             on that, we also verify the weak-to-strong generalization ability of INTP for more intelligible models such
             as CosyVoice 2 and Ints. Moreover, we showcase the potential for further improvements through iterative
-            alignment based on Ints. Audio samples are available at <a
-              href="https://intalign.github.io/">https://intalign.github.io/</a>.
-          </p>
+            alignment based on Ints.
         </div>
 
 
         <div class="mt-8 mb-8" id="dataset">
-          <h5>Dataset Examples</h5>
+          <h4>INTP: Intelligibility Preference Speech Dataset</h4>
           <p>
-            The following examples show the examples of the INTP dataset.
+            We establish a synthetic <u>Int</u>elligibility <u>P</u>reference Speech Dataset (INTP),
+            including about <b>250K</b> preference pairs (over <b>2K</b> hours) of diverse domains.
+            The dataset exhibits the following distinctive features:
+          </p>
+
+          <ul class="list-disc pl-6">
+            <li class="mb-2">
+              <b>Multi-Scenario Coverage:</b>
+              The dataset encompasses various scenarios including <b><i>regular speech</i></b>, <b><i>repeated
+                  phrases</i></b>,
+              <b><i>code-switching contexts</i></b>, and <b><i>cross-lingual synthesis</i></b>.
+            </li>
+            <li class="mb-2">
+              <b>Diverse TTS Model Integration:</b>
+              The dataset leverages three TTS models of <b><i>different architectures</i></b> for data generation,
+              including:
+              <ul class="list-[circle] pl-6 mt-1">
+                <li><a href="https://arxiv.org/abs/2409.00750">ARS</a> (Auto-Regressive based), which is a baseline
+                  called "AR + SoundStorm" in the <a href="https://arxiv.org/abs/2409.00750">MaskGCT</a> paper.
+                </li>
+                <li><a href="https://arxiv.org/abs/2410.06885">F5-TTS</a> (Flow-Matching based).
+                </li>
+                <li><a href="https://arxiv.org/abs/2409.00750">MaskGCT</a> (Masked Generative Model based).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Diverse Preference Pair Construction:</b> We design three categories of preference pairs,
+              <ul class="list-[circle] pl-6 mt-1">
+                <li>
+                  <b>Intra Pair:</b>
+                  Generated through model self-comparison using Best-of-N sampling.
+                  <div class="flex justify-center">
+                    <img src="./img/pair-intra.png" class="mt-2 w-full max-w-[260px]" />
+                  </div>
+                </li>
+                <li>
+                  <b>Inter Pair:</b>
+                  Created by comparing outputs across different models, enabling the exploitation
+                  of their complementary strengths.
+                  <div class="flex justify-center">
+                    <img src="./img/pair-inter.png" class="mt-2 w-full max-w-[260px]" />
+                  </div>
+                </li>
+                <li>
+                  <b>Perturbed Pair:</b>
+                  Developed through the integration of human expertise and the advanced capabilities
+                  of LLM (<a href="https://github.com/deepseek-ai/DeepSeek-V3">DeepSeek-V3</a>) to generate
+                  <b><i>human-guided
+                      negative
+                      samples</i></b>. We design two specific types of text perturbations:
+                  <ul class="list-[square] pl-6 mt-1">
+                    <li><b>Pronunciation perturbation:</b>
+                      We replace certain characters of the text with easily
+                      mispronounceable alternatives.
+                    </li>
+                    <li><b>Punctuation perturbation:</b>
+                      We modify the punctuation, such as commas, to alter pause patterns and prosody in the text.
+                    </li>
+                  </ul>
+                  <div class="flex justify-center">
+                    <img src="./img/pair-perturbed.png" class="mt-2 w-full max-w-[260px]" />
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <p class="mt-4">
+            We will present several samples from the INTP dataset as follows.
           </p>
         </div>
 
         <div class="mt-8 mb-8">
+          <h5>Monolingual Synthesis</h5>
+          <h6>English</h6>
+
+          <p class="mt-4">
+            Given a same English reference speech, we will demonstrate the preference pairs under different
+            target
+            text types.
+          </p>
+
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
-            <h3 class="text-lg font-bold">English</h3>
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
                 <li v-for="(model, index) in Object.keys(egs['en2en'][0])" :key="model" class="me-2">
                   <a href="#" @click.prevent="selected_model = model" :class="[
-                       selected_model === model 
-                         ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
-                         : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-                     ]">
-                    {{ m(model) }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
-              <ul class="flex flex-wrap -mb-px justify-center">
-                <li v-for="(eg, index) in Object.keys(egs['en2en'])" :key="eg" class="me-2">
-                  <a href="#" @click.prevent="current_selected_egs['en'] = index" :class="[
-                         current_selected_egs['en'] === index 
+                         selected_model === model 
                            ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
                            : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
                        ]">
-                    Example #{{ index+1 }}
+                    {{ m(model) }}
                   </a>
                 </li>
               </ul>
@@ -197,8 +262,8 @@
               <table class="w-full mt-2 mb-4 min-w-[1200px]">
                 <thead>
                   <tr>
-                    <th class="text-center w-1/12">Pairs Type</th>
-                    <th class="text-center w-1/12">Model</th>
+                    <!-- <th class="text-center w-1/12">Pairs Type</th> -->
+                    <th class="text-center w-1/12"></th>
                     <th class="text-center w-1/6">Regular</th>
                     <th class="text-center w-1/6">Repeated</th>
                     <th class="text-center w-1/6">Code-Switching</th>
@@ -208,7 +273,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Reference Speech</td>
                     <td colspan="5">
                       <audio
                         :src="get_audio_path(egs['en2en'][current_selected_egs['en']]['ars']['regular']['prompt_wav_path'])"
@@ -217,25 +282,31 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Target Text</td>
                     <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']]['ars'])" :key="col">
                       {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['target_text'] }}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" class="bg-gray-100 font-bold">Perturbed Text</td>
+                    <td v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']]['ars'])" :key="col">
+                      <!-- {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['target_text'] }} -->
+                      <span v-if="!egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text']">
+                        -
+                      </span>
                       <span v-if="egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text']">
-                        <br />
-                        <span class="text-yellow-600">
-                          Perturbed Text: {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text'] }}
-                        </span>
+                        {{ egs['en2en'][current_selected_egs['en']]['ars'][col]['perturbed_text'] }}
                       </span>
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs['en2en'][current_selected_egs['en']])" :key="model">
-                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
+                    <!-- <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
                     <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
-                    </td>
-                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
+                    </td> -->
+                    <td class="font-bold bg-gray-100" v-if="model === selected_model">{{ m(model) }}</td>
 
                     <td v-if="model === selected_model"
                       v-for="col in Object.keys(egs['en2en'][current_selected_egs['en']][model])" :key="col">
@@ -250,43 +321,57 @@
                             :src="get_audio_path(egs['en2en'][current_selected_egs['en']][model][col]['rejected'])"
                             controls preload="none"></audio>
                         </div>
+
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-
-
-        <div class="mt-8 mb-8">
-          <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
-            <h3 class="text-lg font-bold">Chinese</h3>
-            <div
-              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
-              <ul class="flex flex-wrap -mb-px justify-center">
-                <li v-for="(model, index) in Object.keys(egs['en2en'][0])" :key="model" class="me-2">
-                  <a href="#" @click.prevent="selected_model = model" :class="[
-                       selected_model === model 
-                         ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
-                         : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+            <div class="text-sm font-medium text-center text-gray-500">
+              <ul class="flex flex-wrap justify-center mb-4">
+                <li v-for="(eg, index) in Object.keys(egs['en2en'])" :key="eg" class="me-2">
+                  <a href="#" @click.prevent="current_selected_egs['en'] = index" :class="[
+                       'inline-flex items-center justify-center min-w-[120px] px-4 py-2.5 rounded-lg transition-all duration-200',
+                       current_selected_egs['en'] === index 
+                         ? 'bg-blue-50 text-blue-600 font-medium ring-1 ring-blue-600/20' 
+                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                      ]">
-                    {{ m(model) }}
+                    <span class="relative">
+                      Example #{{ index+1 }}
+                    </span>
                   </a>
                 </li>
               </ul>
             </div>
+          </div>
+
+          <p class="mt-4">
+            <i><b>Note:</b> You can click the tabs to change the reference speech, and view pairs generated by
+              different models.</i>
+          </p>
+        </div>
+
+
+        <div class="mt-8 mb-8">
+          <h6>Chinese</h6>
+
+          <p class="mt-4">
+            Given a same Chinese reference speech, we will demonstrate the preference pairs under different
+            target
+            text types.
+          </p>
+          <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
-                <li v-for="(eg, index) in Object.keys(egs['zh2zh'])" :key="eg" class="me-2">
-                  <a href="#" @click.prevent="current_selected_egs['zh'] = index" :class="[
-                         current_selected_egs['zh'] === index 
+                <li v-for="(model, index) in Object.keys(egs['zh2zh'][0])" :key="model" class="me-2">
+                  <a href="#" @click.prevent="selected_model = model" :class="[
+                         selected_model === model 
                            ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
                            : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
                        ]">
-                    Example #{{ index+1 }}
+                    {{ m(model) }}
                   </a>
                 </li>
               </ul>
@@ -295,18 +380,18 @@
               <table class="w-full mt-2 mb-4 min-w-[1200px]">
                 <thead>
                   <tr>
-                    <th class="text-center w-1/12">Pairs Type</th>
-                    <th class="text-center w-1/12">Model</th>
+                    <!-- <th class="text-center w-1/12">Pairs Type</th> -->
+                    <th class="text-center w-1/12"></th>
                     <th class="text-center w-1/6">Regular</th>
                     <th class="text-center w-1/6">Repeated</th>
                     <th class="text-center w-1/6">Code-Switching</th>
-                    <th class="text-center w-1/6">Pronunciation-Perturbed<sup>*</sup></th>
-                    <th class="text-center w-1/6">Punctuation-Perturbed<sup>*</sup></th>
+                    <th class="text-center w-1/6">Pronunciation-Perturbed</th>
+                    <th class="text-center w-1/6">Punctuation-Perturbed</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Reference Speech</td>
                     <td colspan="5">
                       <audio
                         :src="get_audio_path(egs['zh2zh'][current_selected_egs['zh']]['ars']['regular']['prompt_wav_path'])"
@@ -315,20 +400,30 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Target Text</td>
                     <td v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']]['ars'])" :key="col">
-                      {{ egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['perturbed_text'] ||
-                      egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['target_text'] }}
+                      {{ egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['target_text'] }}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" class="bg-gray-100 font-bold">Perturbed Text</td>
+                    <td v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']]['ars'])" :key="col">
+                      <span v-if="!egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['perturbed_text']">
+                        -
+                      </span>
+                      <span v-if="egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['perturbed_text']">
+                        {{ egs['zh2zh'][current_selected_egs['zh']]['ars'][col]['perturbed_text'] }}
+                      </span>
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs['zh2zh'][current_selected_egs['zh']])" :key="model">
-                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
+                    <!-- <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
                     <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
-                    </td>
-                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
+                    </td> -->
+                    <td class="bg-gray-100 font-bold" v-if="model === selected_model">{{ m(model) }}</td>
 
                     <td v-if="model === selected_model"
                       v-for="col in Object.keys(egs['zh2zh'][current_selected_egs['zh']][model])" :key="col">
@@ -349,14 +444,41 @@
                 </tbody>
               </table>
             </div>
+            <div class="text-sm font-medium text-center text-gray-500">
+              <ul class="flex flex-wrap justify-center mb-4">
+                <li v-for="(eg, index) in Object.keys(egs['zh2zh'])" :key="eg" class="me-2">
+                  <a href="#" @click.prevent="current_selected_egs['zh'] = index" :class="[
+                       'inline-flex items-center justify-center min-w-[120px] px-4 py-2.5 rounded-lg transition-all duration-200',
+                       current_selected_egs['zh'] === index 
+                         ? 'bg-blue-50 text-blue-600 font-medium ring-1 ring-blue-600/20' 
+                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                     ]">
+                    <span class="relative">
+                      Example #{{ index+1 }}
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <p class="mt-4">
+            <i><b>Note:</b> You can click the tabs to change the reference speech, and view pairs generated by
+              different models.</i>
+          </p>
         </div>
 
 
 
         <div class="mt-8 mb-8">
+          <h5>Cross-Lingual Synthesis</h5>
+
+          <p class="mt-4">
+            We include two types of cross-lingual settings: <i><b>en2zh</b></i> (English reference speech with Chinese
+            target text)
+            and <i><b>zh2en</b></i> (Chinese reference speech with English target text):
+          </p>
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900">
-            <h3 class="text-lg font-bold">Cross-Lingual</h3>
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
               <ul class="flex flex-wrap -mb-px justify-center">
@@ -371,33 +493,19 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
-              <ul class="flex flex-wrap -mb-px justify-center">
-                <li v-for="(set, index) in ['en2zh', 'zh2en']" :key="set" class="me-2">
-                  <a href="#" @click.prevent="current_selected_egs['set'] = set" :class="[
-                         current_selected_egs['set'] === set 
-                           ? 'inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500' 
-                           : 'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-                       ]">
-                    {{ set }}
-                  </a>
-                </li>
-              </ul>
-            </div>
 
             <div class="overflow-x-auto">
               <table class="w-full mt-2 mb-4 min-w-[1200px]">
                 <thead>
                   <tr>
-                    <th class="text-center w-1/12">Pairs Type</th>
-                    <th class="text-center w-1/12">Model</th>
+                    <!-- <th class="text-center w-1/12">Pairs Type</th> -->
+                    <th class="text-center w-1/12"></th>
                     <th class="text-center w-1/6" v-for="i in 5" :key="i">Example #{{ i }}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Reference Speech</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Reference Speech</td>
                     <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
                       <audio
                         :src="get_audio_path(egs[current_selected_egs['set']][i]['ars']['regular']['prompt_wav_path'])"
@@ -406,19 +514,19 @@
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="bg-gray-100 font-bold">Target Text</td>
+                    <td colspan="1" class="bg-gray-100 font-bold">Target Text</td>
                     <td v-for="i in [0, 1, 2, 3, 4]" :key="i">
                       {{ egs[current_selected_egs['set']][i]['ars']['regular']['target_text'] }}
                     </td>
                   </tr>
                   <tr v-for="(model, index) in Object.keys(egs[current_selected_egs['set']][0])" :key="model">
-                    <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
+                    <!-- <td v-if="index < 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Intra
                     </td>
                     <td v-if="index >= 3 && selected_model === model" class="bg-gray-100 font-bold">
                       Inter
-                    </td>
-                    <td class="font-bold" v-if="model === selected_model">{{ m(model) }}</td>
+                    </td> -->
+                    <td class="bg-gray-100 font-bold" v-if="model === selected_model">{{ m(model) }}</td>
 
                     <td v-if="model === selected_model" v-for="i in [0, 1, 2, 3, 4]" :key="i">
                       <div class="flex flex-col gap-2">
@@ -439,7 +547,29 @@
                 </tbody>
               </table>
             </div>
+
+            <div class="text-sm font-medium text-center text-gray-500">
+              <ul class="flex flex-wrap justify-center mb-4">
+                <li v-for="(set, index) in ['en2zh', 'zh2en']" :key="set" class="me-2">
+                  <a href="#" @click.prevent="current_selected_egs['set'] = set" :class="[
+                         'inline-flex items-center justify-center min-w-[120px] px-4 py-2.5 rounded-lg transition-all duration-200',
+                         current_selected_egs['set'] === set 
+                           ? 'bg-blue-50 text-blue-600 font-medium ring-1 ring-blue-600/20' 
+                           : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                       ]">
+                    <span class="relative">
+                      {{ set }}
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <p class="mt-4">
+            <i><b>Note:</b> You can click the tabs to change the cross-lingual setting, and view pairs generated by
+              different models.</i>
+          </p>
         </div>
 
         <div class="mt-8 mb-8" id="experiments">
@@ -451,7 +581,7 @@
 
         <div class="mt-8 mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900" v-for="model in models_golden_pick">
-            <h3 class="text-lg font-bold">{{ m(model) }}</h3>
+            <h3 class="text-lg font-bold">{{ expt_m(model) }}</h3>
 
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
@@ -529,19 +659,27 @@
     }
 
     const mapping = {
-      "ars": "ARS",
-      "cosyvoice2": "CosyVoice 2",
-      "f5tts": "F5-TTS",
-      "maskgct": "MaskGCT",
-      "ars_f5tts": "ARS + F5-TTS",
-      "ars_maskgct": "ARS + MaskGCT",
-      "f5tts_maskgct": "F5-TTS + MaskGCT",
+      "ars": "Intra (ARS)",
+      "cosyvoice2": "Intra (CosyVoice 2)",
+      "f5tts": "Intra (F5-TTS)",
+      "maskgct": "Intra (MaskGCT)",
+      "ars_f5tts": "Inter (ARS vs F5-TTS)",
+      "ars_maskgct": "Inter (ARS vs MaskGCT)",
+      "f5tts_maskgct": "Inter (F5-TTS vs MaskGCT)",
       "ints": "Ints",
       "ins": "Ints",
       "regular": "Regular",
       "tongueTwisters": "Tongue Twisters",
       "codeSwitching": "Code-Switching",
       "crossLingual": "Cross-Lingual"
+    }
+
+    const expt_mapping = {
+      "ars": "ARS",
+      "cosyvoice2": "CosyVoice 2",
+      "f5tts": "F5-TTS",
+      "maskgct": "MaskGCT",
+      "ins": "Ints"
     }
 
     createApp({
@@ -596,8 +734,13 @@
           return mapping[from] || from
         }
 
+        const expt_m = (from) => {
+          return expt_mapping[from] || from
+        }
+
         return {
           m,
+          expt_m,
           models_golden_pick,
           models_golden_pick_ars,
           egs,
