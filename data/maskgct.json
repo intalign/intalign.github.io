@@ -1,18 +1,41 @@
 {
-  "tongueTwisters": [
+  "regular": [
     {
-      "target_text": "Wild wolves wandered through the wild woods, weaving between wiggling willows.",
-      "prompt_path": "maskgct/tongueTwisters/en_001.wav",
-      "prompt_text": "A chance to leave him alone, but... No. She just wanted to see him again. Anna, you don't know how it feels to lose a sister. Anna, I'm sorry, but your father asked me not to tell you anything.",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_001.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_001.wav"
+      "target_text": "I would lose myself in the rhythm of the work, the smell of fresh paint and sawdust filling the air. Each stroke brought a sense of calm, a momentary escape from the chaos of the past. As the sun dipped below the horizon, the colors transformed under the soft glow of the lamp, shadows dancing on the walls, whispering memories of better days. Yet, despite the ache and the labor, there was something healing in it, a promise of new beginnings.",
+      "prompt_path": "maskgct/regular/en_023.wav",
+      "prompt_text": "sanding wood until my back ached, painting into the night, varnishing, god, he used to bite me ill. Anyway.",
+      "base_path": "maskgct/regular/regular#en_023.wav",
+      "dpo_path": "maskgct/regular/dpo_regular#en_023.wav"
     },
     {
-      "target_text": "Shiny squirrels swiftly scampered past slippery stones near the shining, slithering stream.",
-      "prompt_path": "maskgct/tongueTwisters/en_008.wav",
-      "prompt_text": "Perhaps whoever left these behind was... also fulfilling a contract?.",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_008.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_008.wav"
+      "target_text": "who seem to think they know better than the vision I have laid out. It’s frustrating to navigate through this noise, trying to keep the focus on our goals without losing sight of the collaborative spirit that brought us here in the first place. Every decision I make is with the best interest of the project, and I need each of you to trust that I am steering the ship toward success. Let's refocus and channel that energy into productive discussions rather than second-guessing each other.",
+      "prompt_path": "maskgct/regular/en_021.wav",
+      "prompt_text": "I have reminded you all numerous times that I am directing this, and still I'm surrounded by backseat drivers",
+      "base_path": "maskgct/regular/regular#en_021.wav",
+      "dpo_path": "maskgct/regular/dpo_regular#en_021.wav"
+    },
+    {
+      "target_text": "那一瞬间，仿佛能听到星星在低语，月亮在微笑。我仰望着天空，心中涌现出无尽的幻想，想象着穿越云层，探索那无垠的宇宙。也许在那遥远的地方，有着我未曾见过的奇迹，等待着我去发现。每一颗星星都是一个故事，每一缕星光都闪烁着渴望，渴望着我的到来。",
+      "prompt_path": "maskgct/regular/zh_012.wav",
+      "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
+      "base_path": "maskgct/regular/regular#zh_012.wav",
+      "dpo_path": "maskgct/regular/dpo_regular#zh_012.wav"
+    },
+    {
+      "target_text": "在课堂上，他总能用生动的方式将复杂的知识点化繁为简，吸引每一个学生的注意力。无论是通过幽默的故事，还是互动的讨论，他总能激发学生的学习兴趣，让他们愿意主动参与进来。不仅如此，他还注重因材施教，能够因应每位学生的不同情况，给予个性化的指导和支持。这样的教学风格使得他深受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
+      "prompt_path": "maskgct/regular/zh_025.wav",
+      "prompt_text": "但是，那教学能力可谓是一流啊",
+      "base_path": "maskgct/regular/regular#zh_025.wav",
+      "dpo_path": "maskgct/regular/dpo_regular#zh_025.wav"
+    }
+  ],
+  "tongueTwisters": [
+    {
+      "target_text": "Frisky foxes found fresh food from the flowing forest while frolicking in the fields.",
+      "prompt_path": "maskgct/tongueTwisters/en_006.wav",
+      "prompt_text": "How dare you!?",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#en_006.wav",
+      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_006.wav"
     },
     {
       "target_text": "Chuck’s cheerful chickens chose crunchy corn crackers for Christmas celebration cheer.",
@@ -22,18 +45,18 @@
       "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#en_020.wav"
     },
     {
-      "target_text": "山羊上山山碰山羊角，水牛下水水没水牛腰。猪进猪圈猪拱大猪槽，毛驴驮草草压毛驴腰。",
-      "prompt_path": "maskgct/tongueTwisters/zh_010.wav",
-      "prompt_text": "原来张万森的那片荧光海，真的存在。我在厦门，遇见了这片蓝眼泪，它像碎钻洒进了大海，又像星星坠入了人间。",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_010.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#zh_010.wav"
+      "target_text": "八月十五月亮圆，月亮圆圆像银盘，红木桌子金闪闪，西瓜月饼共上天，海棠果，红枣鲜，当中摆个大鸭梨，红白石榴两边站，手捧甜球把月拜，拜的月亮爷爷心喜欢，银辉朗朗撒满地，保咱天下都平安。",
+      "prompt_path": "maskgct/tongueTwisters/zh_004.wav",
+      "prompt_text": "臣年羹尧恭谢皇上圣恩！",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_004.wav",
+      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#zh_004.wav"
     },
     {
-      "target_text": "蚕吐丝 桑蚕吃桑叶，桑叶桑蚕吃。桑叶喂桑蚕，桑蚕吐蚕丝。桑蚕吐丝丝缠蚕，蚕丝缠蚕蚕吐丝。",
-      "prompt_path": "maskgct/tongueTwisters/zh_012.wav",
-      "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
-      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_012.wav",
-      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#zh_012.wav"
+      "target_text": "挨揍渐渐成习惯，无数金星眼前转。经常被人打住院，痛彻心扉说情愿！",
+      "prompt_path": "maskgct/tongueTwisters/zh_023.wav",
+      "prompt_text": "刚刚,欣欣在那边的树林里面唱信,被我撞破以后还不承认,说我脑子烧坏了。 ",
+      "base_path": "maskgct/tongueTwisters/tongueTwisters#zh_023.wav",
+      "dpo_path": "maskgct/tongueTwisters/dpo_tongueTwisters#zh_023.wav"
     }
   ],
   "codeSwitching": [
@@ -73,7 +96,7 @@
       "dpo_path": "maskgct/codeSwitching/dpo_codeSwitching#zh_013.wav"
     },
     {
-      "target_text": "he always能够用 vivid 的方式将复杂的知识点化繁为简，attract every student’s attention. 不论是通过 humorous stories，还是 interactive discussions，他总能 stimulate students’ learning interest，让他们愿意主动参与进来。Not only that, he also 注重因材施教，能够依据每位学生的不同情况，提供 personalized guidance 和支持。这样的 teaching style 使得他 deep受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
+      "target_text": "In class, he always能够用 vivid 的方式将复杂的知识点化繁为简，attract every student’s attention. 不论是通过 humorous stories，还是 interactive discussions，他总能 stimulate students’ learning interest，让他们愿意主动参与进来。Not only that, he also 注重因材施教，能够依据每位学生的不同情况，提供 personalized guidance 和支持。这样的 teaching style 使得他 deep受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
       "prompt_path": "maskgct/codeSwitching/zh_025.wav",
       "prompt_text": "但是，那教学能力可谓是一流啊",
       "base_path": "maskgct/codeSwitching/codeSwitching#zh_025.wav",
@@ -105,7 +128,7 @@
     {
       "target_text": "他们在世界上徘徊，迷失在同质化的海洋中，而想象的火花在内心微弱地闪烁。每一天都像是对前一天的重复，色彩褪去成灰色的阴影，压制着那些渴望自由释放的生动想法。然而，内心深处，他们渴望着那个时刻，当有人能够认可他们独特视野的美。也许有一天，忽视的墙壁会崩溃，创造力的交响乐最终会在每一个心中回响。",
       "prompt_path": "maskgct/crossLingual/en_024.wav",
-      "prompt_text": "In which nobody, NOBODY understood what it was to be a creative being.",
+      "prompt_text": "Go, you're free now.",
       "base_path": "maskgct/crossLingual/crossLingual#en_024.wav",
       "dpo_path": "maskgct/crossLingual/dpo_crossLingual#en_024.wav"
     },

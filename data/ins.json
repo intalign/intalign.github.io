@@ -1,4 +1,34 @@
 {
+  "regular": [
+    {
+      "target_text": "I would lose myself in the rhythm of the work, the smell of fresh paint and sawdust filling the air. Each stroke brought a sense of calm, a momentary escape from the chaos of the past. As the sun dipped below the horizon, the colors transformed under the soft glow of the lamp, shadows dancing on the walls, whispering memories of better days. Yet, despite the ache and the labor, there was something healing in it, a promise of new beginnings.",
+      "prompt_path": "ins/regular/en_023.wav",
+      "prompt_text": "sanding wood until my back ached, painting into the night, varnishing, god, he used to bite me ill. Anyway.",
+      "base_path": "ins/regular/regular#en_023.wav",
+      "dpo_path": "ins/regular/dpo_regular#en_023.wav"
+    },
+    {
+      "target_text": "who seem to think they know better than the vision I have laid out. It’s frustrating to navigate through this noise, trying to keep the focus on our goals without losing sight of the collaborative spirit that brought us here in the first place. Every decision I make is with the best interest of the project, and I need each of you to trust that I am steering the ship toward success. Let's refocus and channel that energy into productive discussions rather than second-guessing each other.",
+      "prompt_path": "ins/regular/en_021.wav",
+      "prompt_text": "I have reminded you all numerous times that I am directing this, and still I'm surrounded by backseat drivers",
+      "base_path": "ins/regular/regular#en_021.wav",
+      "dpo_path": "ins/regular/dpo_regular#en_021.wav"
+    },
+    {
+      "target_text": "那一瞬间，仿佛能听到星星在低语，月亮在微笑。我仰望着天空，心中涌现出无尽的幻想，想象着穿越云层，探索那无垠的宇宙。也许在那遥远的地方，有着我未曾见过的奇迹，等待着我去发现。每一颗星星都是一个故事，每一缕星光都闪烁着渴望，渴望着我的到来。",
+      "prompt_path": "ins/regular/zh_012.wav",
+      "prompt_text": "多美的天穹！我已经迫不及待想要亲手戳破它了~",
+      "base_path": "ins/regular/regular#zh_012.wav",
+      "dpo_path": "ins/regular/dpo_regular#zh_012.wav"
+    },
+    {
+      "target_text": "在课堂上，他总能用生动的方式将复杂的知识点化繁为简，吸引每一个学生的注意力。无论是通过幽默的故事，还是互动的讨论，他总能激发学生的学习兴趣，让他们愿意主动参与进来。不仅如此，他还注重因材施教，能够因应每位学生的不同情况，给予个性化的指导和支持。这样的教学风格使得他深受学生喜爱，也让他们在学习中获得了更大的乐趣和收获。",
+      "prompt_path": "ins/regular/zh_025.wav",
+      "prompt_text": "但是，那教学能力可谓是一流啊",
+      "base_path": "ins/regular/regular#zh_025.wav",
+      "dpo_path": "ins/regular/dpo_regular#zh_025.wav"
+    }
+  ],
   "tongueTwisters": [
     {
       "target_text": "Double bubble gum bubbles double better with bigger double bubble gum bits.",
