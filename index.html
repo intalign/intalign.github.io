@@ -602,13 +602,16 @@
                 href="https://arxiv.org/abs/2412.10117"> (Du et al., 2024)</a>, and
               <b>Ints</b> (Appendix D of our
               paper). Both models are initialized
-              from textual LLMs (CosyVoice 2: from <a href="https://huggingface.co/Qwen/Qwen2.5-0.5B">Qwen2.5, 0.5B</a>.
+              from textual LLMs (CosyVoice 2: from <a href="https://huggingface.co/Qwen/Qwen2.5-0.5B">Qwen-2.5,
+                0.5B</a>.
               Ints: from <a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct">Phi-3.5-mini-instruct,
                 3.8B</a>)
               and achieve
               superior intelligibility performance (Table 4 of
               our
-              paper). We observe that INTP remains effective for these more capable models:
+              paper). Although CosyVoice 2 and Ints did not participate in INTP construction, we observe that INTP
+              remains
+              effective for them:
             </p>
 
             <h5 :id="model" class="pt-6">{{ expt_m(model) }}</h5>
