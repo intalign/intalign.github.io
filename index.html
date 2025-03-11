@@ -124,7 +124,7 @@
               <a href="#experiments" class="list-select"><b>INTP Alignment</b></a>
             </li>
             <li>
-              <a href="#cosyvoice2" class="list-select"><b>Weak-to-strong Generalization</b></a>
+              <a href="#weak-to-strong" class="list-select"><b>Weak-to-strong Generalization</b></a>
             </li>
 
           </ul>
@@ -587,19 +587,31 @@
           <h4>Results of INTP Alignment</h4>
           <p>
             To verify the effectiveness of <a href="https://arxiv.org/abs/2305.18290">DPO</a> with INTP for
-            existing TTS models, we conduct alignment experiments with multiple models. In addition to
-            <b>ARS</b>, <b>F5-TTS</b>, and <b>MaskGCT</b>, which were used in
-            constructing the INTP dataset, we also introduce
-            two more powerful models in terms of intelligibility: <b>CosyVoice 2</b><a
-              href="https://arxiv.org/abs/2412.10117"> (Du et al., 2024)</a>, and <b>Ints</b> (Appendix D of our paper),
-            to validate INTP’s weak-to-strong
-            generalization capability.
+            existing TTS models, we conduct alignment experiments with multiple models. First, we evaluate the alignment
+            effectiveness on the three models that participated in INTP construction: <b>ARS</b>, <b>F5-TTS</b>, and
+            <b>MaskGCT</b>:
           </p>
         </div>
 
         <div class="mb-8">
           <div class="mx-auto text-sm text-left rtl:text-right text-gray-900" v-for="model in models_golden_pick">
-            <h5 :id="model" class="pt-12">{{ expt_m(model) }}</h5>
+            <p v-if="model === 'cosyvoice2'" class="mt-10 text-base" id="weak-to-strong">
+              To investigate INTP's weak-to-strong
+              generalization capability on
+              more powerful base models, we research its alignment effects on <b>CosyVoice 2</b><a
+                href="https://arxiv.org/abs/2412.10117"> (Du et al., 2024)</a>, and
+              <b>Ints</b> (Appendix D of our
+              paper). Both models are initialized
+              from textual LLMs (CosyVoice 2: from <a href="https://huggingface.co/Qwen/Qwen2.5-0.5B">Qwen2.5, 0.5B</a>.
+              Ints: from <a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct">Phi-3.5-mini-instruct,
+                3.8B</a>)
+              and achieve
+              superior intelligibility performance (Table 4 of
+              our
+              paper).
+            </p>
+
+            <h5 :id="model" class="pt-6">{{ expt_m(model) }}</h5>
 
             <div
               class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 ">
